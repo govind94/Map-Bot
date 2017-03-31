@@ -3,10 +3,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 var helper = require('./helper');
+var ipinfoAPI = '06fa9a46e07d49f65936a81ee009395ffc07bd437c9f71ee74371135406605ca';
 var placesAPI = 'AIzaSyCjuvR8Wfdzg2e3EVmU30Lun8hcmxyeSLo';
 var directionsAPI = 'AIzaSyDBuY63041R_cpalQykTqpuFRvm_zz1EKA';
 var geocodingAPI = 'AIzaSyDWk0jqpQ0UTAMIO9zKw6O8UrSHGfwjpts';
-var ipinfoAPI = '06fa9a46e07d49f65936a81ee009395ffc07bd437c9f71ee74371135406605ca';
+var nearestRoadsAPI = 'AIzaSyB6NH1Sdv6K7rCc0JkONcV8e4pu-yF_YpE'
 
 const restService = express();
 
@@ -21,7 +22,9 @@ var speech = '';
 var lat;
 var lng;
 
-helper.ipInfo();
+var str = "airport movie_theater restaurant hindu_temple doctor accounting amusement_park aquarium art_gallery atm bakery bank bar beauty_salon bicycle_store book_store bowling_alley bus_station cafe campground car_dealer car_rentel car_repair car_wash casino cemetery church city_hall clothing_store convenience_store courthouse department_store dentist electrician electronics_store embassy fire_station florist funeral_home furniture_store gas_station gym hair_care hardware_store home_goods_store hospital insurance_agency jewelry_store laundry lawyer library liquor_store local_government_office locksmith lodging meal_delivery meal_takeaway mosque movie_rentel moving_company museum night_club painter park parking pet_store pharmacy physiotherapist plumber police post_office real_estate_agency roofing_contractor rv_park school shoe_store shopping_mall spa stadium storage store subway_station synagogue taxi_stand train_station transit_station travel_agency university veterinary_care zoo";
+
+ipInfo();
 
 restService.post('/bot', function(req, res) {
     var json = req.body.result;
@@ -29,8 +32,13 @@ restService.post('/bot', function(req, res) {
     var action = json.action;
     switch (action)
     {
-        case 'type.name': 
-            type_name(json, res);
+        case 'type.name':
+            if (str.includes(json.parameters.type)) type_name(json, res);
+            else 
+            {
+                speech = "I cannot answer something I have absolutely no idea about! If you want to search for a specific place, please type \"Specific requests\".";
+                helper.returnSpeech(res, speech);
+            }
             break;
         case 'type.info': 
             type_info(json, res);
@@ -41,6 +49,9 @@ restService.post('/bot', function(req, res) {
         case 'user.location': 
             user_location(res);
             break;
+        case 'nearest.roads':
+            nearest_roads(res);
+            break;
         default:
             console.log("This will never be the case!");
     }
@@ -50,8 +61,8 @@ function type_name(json, res)
 {
     var url;
     var type = json.parameters.type;
-    var withRadius = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&radius=5000&rankby=prominence&type='+type+'&key='+placesAPI;
-    var withoutRadius = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&rankby=distance&type='+type+'&key='+placesAPI;
+    var withRadius = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&radius=5000&rankby=prominence&type='+type+'&keyword='+type+'&key='+placesAPI;
+    var withoutRadius = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&rankby=distance&type='+type+'&keyword='+type+'&key='+placesAPI;
     if (json.parameters.rankby == 'prominence')
     {
         speech = "Based on prominence: ";
@@ -135,10 +146,12 @@ function text_search(json, res)
 {
     var phrase = json.parameters.phrase;
     phrase.replace(/ /g, "+").replace(/\?/g, "");
-    speech = "I hope this is helpful:\n";
     var url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query='+phrase+'&key='+placesAPI;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
+        if (result.results.length == 0) helper.returnSpeech(res, "I don't have an answer for your question :(");
+        if (result.results.length < 3) speech = "I could find only " + result.results.length + ":\n";
+        else speech = "I hope this is helpful:\n";
         for (var i = 0; i < 5 && i < result.results.length; i++)
             speech += "\n" + (i + 1) + ". " + result.results[i].name + " | " + result.results[i].formatted_address;
         helper.returnSpeech(res, speech);
@@ -212,6 +225,34 @@ function user_location(res)
         var result = JSON.parse(response);
         speech += result.results[0].formatted_address;
         helper.returnSpeech(res, speech);
+    });
+}
+
+function nearest_roads(res)
+{
+    speech = "Road nearest to you:\n";
+    var url = 'https://roads.googleapis.com/v1/nearestRoads?points='+lat+','+lng+'&key='+nearestRoadsAPI;
+    helper.httpsGet(url, function(response) {
+        var result = JSON.parse(response);
+        console.log(result);
+        var placeId = result.snappedPoints[0].placeId;
+        url = 'https://maps.googleapis.com/maps/api/place/details/json?placeid='+placeId+'&key='+placesAPI;
+        helper.httpsGet(url, function(response) {
+            var result = JSON.parse(response);
+            speech += result.result.formatted_address;
+            helper.returnSpeech(res, speech);
+        });
+    });
+}
+
+function ipInfo()
+{
+    // public IP - mine: 69.116.29.239; 10R: 69.116.24.253
+    var url = 'https://api.ipinfodb.com/v3/ip-city/?format=json&ip=69.116.29.239&key='+ipinfoAPI;
+    helper.httpsGet(url, function(response) {
+        var result = JSON.parse(response);
+        lat = result.latitude - 0.05120124888;
+        lng = result.longitude - (-0.02870008602);
     });
 }
 
