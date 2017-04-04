@@ -21,7 +21,8 @@ restService.use(bodyParser.json());
 var speech = '';
 var lat;
 var lng;
-var head = ["I hope you find this helpful:\n", "Here you go:\n", "I found these for you:\n", "You might wanna check these out:\n"];
+var head = ["I hope you find this helpful :)\n", "Here you go ;)\n", "I found these for you :D\n", "You might wanna check these out :P\n"];
+var zero = ["I don't have an answer for your question :(", "Well, I tried everything I could but to no avail. :|", "Seems to me like there's something wrong with your request. How about you try a different one? :P", "Oops, I couldn't find anything! :("];
 
 // var str = "airport movie_theater restaurant hindu_temple doctor accounting amusement_park aquarium art_gallery atm bakery bank bar beauty_salon bicycle_store book_store bowling_alley bus_station cafe campground car_dealer car_rentel car_repair car_wash casino cemetery church city_hall clothing_store convenience_store courthouse department_store dentist electrician electronics_store embassy fire_station florist funeral_home furniture_store gas_station gym hair_care hardware_store home_goods_store hospital insurance_agency jewelry_store laundry lawyer library liquor_store local_government_office locksmith lodging meal_delivery meal_takeaway mosque movie_rentel moving_company museum night_club painter park parking pet_store pharmacy physiotherapist plumber police post_office real_estate_agency roofing_contractor rv_park school shoe_store shopping_mall spa stadium storage store subway_station synagogue taxi_stand train_station transit_station travel_agency university veterinary_care zoo";
 
@@ -64,6 +65,7 @@ function type_name(json, res)
     var url;
     var type = json.parameters.type;
     type.replace(/ /g, "+").replace(/\?/g, "");
+    // what if type not in the list?
     var withRadius = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&radius=5000&rankby=prominence&type='+type+'&keyword='+type+'&key='+placesAPI;
     var withoutRadius = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&rankby=distance&type='+type+'&keyword='+type+'&key='+placesAPI;
     if (json.parameters.rankby == 'prominence') url = withRadius;
@@ -87,7 +89,9 @@ function text_search(json, res)
 {
     var phrase = json.parameters.phrase;
     phrase.replace(/ /g, "+").replace(/\?/g, "");
-    var url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?location='+lat+','+lng+'&query='+phrase+'&key='+placesAPI;
+    // need i use location?
+    // var url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?location='+lat+','+lng+'&query='+phrase+'&key='+placesAPI;
+    var url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query='+phrase+'&key='+placesAPI;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
         var x = Math.floor(Math.random() * head.length);
@@ -105,147 +109,95 @@ function type_info(json, res)
 {
     var keyword = json.parameters.type_original;
     keyword.replace(/ /g, "+").replace(/\?/g, "");
-    var url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&rankby=distance&keyword='+keyword+'&key='+placesAPI;
+    // var url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&rankby=distance&keyword='+keyword+'&key='+placesAPI;
+    var url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query='+keyword+'&key='+placesAPI;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
-        if (result.results.length == 0) helper.returnSpeech(res, "I don't have an answer for your question :(");
-        var placeId = result.results[0].place_id;
-        url = 'https://maps.googleapis.com/maps/api/place/details/json?placeid='+placeId+'&key='+placesAPI;
-        helper.httpsGet(url, function(response) {
-            result = JSON.parse(response);
-            if (result.result === undefined) helper.returnSpeech(res, "I don't have an answer for your question :(");
-            var name = result.result.name;
-            // json.parameters.type_original + " - " + 
-            var json_key = json.parameters.json_key;
-            
-            /*
-            switch (json_key)
-            {
-                case 'rating':
+        var x = Math.floor(Math.random() * head.length);
+        if (result.results.length == 0) helper.returnSpeech(res, zero[x]);
+        else 
+        {
+            var placeId = result.results[0].place_id;
+            url = 'https://maps.googleapis.com/maps/api/place/details/json?placeid='+placeId+'&key='+placesAPI;
+            helper.httpsGet(url, function(response) {
+                result = JSON.parse(response);
+                if (result.result === undefined) helper.returnSpeech(res, zero[x]);
+                else 
                 {
-                    var rating = result.result.rating;
-                    speech = "Rating of " + name + ": " + rating;
-                    break;
-                }
-
-                case 'website':
-                {
-                    var website = result.result.website;
-                    speech = "Website of " + name + ": " + website;
-                    break;
-                }
-
-                case 'international_phone_number':
-                {
-                    var international_phone_number = result.result.international_phone_number;
-                    speech = "Contact of " + name  + ": " + international_phone_number;
-                    break;
-                }    
-
-                case 'formatted_address':
-                {
-                    var formatted_address = result.result.formatted_address;
-                    speech = "Address of " + name + ": " + formatted_address;
-                    break;
-                }
-
-                case 'opening_hours':
-                {
-                    if (result.result.opening_hours === undefined) speech = "I'm not really sure if they're open. Sorry!";
-                    else
+                    var name = result.result.name;
+                    var jsonKey = json.parameters.json_key;
+                    switch (jsonKey)
                     {
-                        var opening_hours = result.result.opening_hours.open_now;
-                        if (opening_hours) speech = json.parameters.type_original + " is open now."; // replace()
-                        else speech = name + " is closed now.";
-                    }
-                    break;
-                }
-
-                case 'reviews':
-                {
-                    var reviews = '';
-                    for (var i = 0; i < result.result.reviews.length && i < 3; i++)
-                        if (result.result.reviews[i].text)
+                        case 'rating':
                         {
-                            reviews += "\n" + (i + 1) + ". Name: " + result.result.reviews[i].author_name + " | Rating: " + result.result.reviews[i].aspects[0].rating;
-                            reviews += "\nReview: " + result.result.reviews[i].text;                
+                            var rating = result.result.rating;
+                            speech = "Rating of " + name + ": " + rating;
+                            break;
                         }
-                    speech = "Reviews of " + name + ":\n";
-                    speech += reviews;
-                    break;
-                }
+
+                        case 'website':
+                        {
+                            var website = result.result.website;
+                            speech = "Website of " + name + ": " + website;
+                            break;
+                        }
+
+                        case 'international_phone_number':
+                        {
+                            var international_phone_number = result.result.international_phone_number;
+                            speech = "Contact of " + name  + ": " + international_phone_number;
+                            break;
+                        }    
+
+                        case 'formatted_address':
+                        {
+                            var formatted_address = result.result.formatted_address;
+                            speech = "Address of " + name + ": " + formatted_address;
+                            break;
+                        }
+
+                        case 'opening_hours':
+                        {
+                            if (result.result.opening_hours === undefined) speech = "I'm not really sure if they're open. Sorry! Perhaps you'd like to know about other places?";
+                            else
+                            {
+                                var opening_hours = result.result.opening_hours.open_now;
+                                if (opening_hours) speech = name + " is open now."; // replace()
+                                else speech = name + " is closed now.";
+                            }
+                            break;
+                        }
+
+                        case 'reviews':
+                        {
+                            var reviews = '';
+                            for (var i = 0; i < result.result.reviews.length && i < 3; i++)
+                            if (result.result.reviews[i].text)
+                            {
+                                reviews += "\n" + (i + 1) + ". Name: " + result.result.reviews[i].author_name + " | Rating: " + result.result.reviews[i].aspects[0].rating;
+                                reviews += "\nReview: " + result.result.reviews[i].text;                
+                            }
+                            speech = "Reviews of " + name + ":\n";
+                            speech += reviews;
+                            break;
+                        }
                     
-                case 'photos':
-                {
-                    var x = Math.floor((Math.random() * result.result.photos.length));
-                    var photo = result.result.photos[x].html_attributions[0];
-                    var start = 9;
-                    var end = photo.indexOf("\">");
-                    var url = photo.substring(start, end);
-                    speech = "\nClick the link: \n";
-                    speech += url;
-                    break;
-                }
-                helper.returnSpeech(res, speech);  
-            }
-
-            */
-
-            
-            if (json.parameters.json_key === 'rating')
-            {
-                var rating = result.result.rating;
-                speech = "Rating of " + name + ": " + rating;
-            }
-            else if (json.parameters.json_key === 'website')
-            {
-                var website = result.result.website;
-                speech = "Website of " + name + ": " + website;
-            }
-            else if (json.parameters.json_key === 'international_phone_number')
-            {
-                var international_phone_number = result.result.international_phone_number;
-                speech = "Contact of " + name  + ": " + international_phone_number;
-            }
-            else if (json.parameters.json_key === 'formatted_address')
-            {
-                var formatted_address = result.result.formatted_address;
-                speech = "Address of " + name + ": " + formatted_address;
-            }
-            else if (json.parameters.json_key === 'opening_hours')
-            {
-                if (result.result.opening_hours === undefined) speech = "I'm not really sure if they're open. Sorry!";
-                else
-                {
-                    var opening_hours = result.result.opening_hours.open_now;
-                    if (opening_hours) speech = json.parameters.type_original + " is open now."; // replace()
-                    else speech = name + " is closed now.";
-                }
-            }
-            else if (json.parameters.json_key === 'reviews')
-            {
-                var reviews = '';
-                for (var i = 0; i < result.result.reviews.length && i < 3; i++)
-                    if (result.result.reviews[i].text)
-                    {
-                        reviews += "\n" + (i + 1) + ". Name: " + result.result.reviews[i].author_name + " | Rating: " + result.result.reviews[i].aspects[0].rating;
-                        reviews += "\nReview: " + result.result.reviews[i].text;                
+                        case 'photos':
+                        {   
+                            var x = Math.floor((Math.random() * result.result.photos.length));
+                            var photo = result.result.photos[x].html_attributions[0];
+                            var start = 9;
+                            var end = photo.indexOf("\">");
+                            var url = photo.substring(start, end);
+                            speech = "\nClick the link: \n";
+                            speech += url;
+                            break;
+                        }
                     }
-                speech = "Reviews of " + name + ":\n";
-                speech += reviews;
-            }
-            else if (json.parameters.json_key === 'photos')
-            {
-                var x = Math.floor((Math.random() * result.result.photos.length));
-                var photo = result.result.photos[x].html_attributions[0];
-                var start = 9;
-                var end = photo.indexOf("\">");
-                var url = photo.substring(start, end);
-                speech = "\nClick the link: \n";
-                speech += url;
-            }
-            helper.returnSpeech(res, speech);
-        });
+                    helper.returnSpeech(res, speech);
+                }
+            });
+        }
     });
 }
 
