@@ -22,7 +22,7 @@ var speech = '';
 var lat;
 var lng;
 var head = ["I hope you find this helpful :)\n", "Here you go ;)\n", "I found these for you :D\n", "You might wanna check these out :P\n"];
-var zero = ["I don't have an answer for your question :(", "Well, I tried everything I could but to no avail. :|", "Seems to me like there's something wrong with your request. How about you try a different one? :P", "Oops, I couldn't find anything! :("];
+var zero = ["I don't have an answer for your question :(", "Well, I tried everything I could but to no avail. :|", "Seems to me like there's something wrong with your request.", "Oops, I couldn't find anything! :("];
 
 // var str = "airport movie_theater restaurant hindu_temple doctor accounting amusement_park aquarium art_gallery atm bakery bank bar beauty_salon bicycle_store book_store bowling_alley bus_station cafe campground car_dealer car_rentel car_repair car_wash casino cemetery church city_hall clothing_store convenience_store courthouse department_store dentist electrician electronics_store embassy fire_station florist funeral_home furniture_store gas_station gym hair_care hardware_store home_goods_store hospital insurance_agency jewelry_store laundry lawyer library liquor_store local_government_office locksmith lodging meal_delivery meal_takeaway mosque movie_rentel moving_company museum night_club painter park parking pet_store pharmacy physiotherapist plumber police post_office real_estate_agency roofing_contractor rv_park school shoe_store shopping_mall spa stadium storage store subway_station synagogue taxi_stand train_station transit_station travel_agency university veterinary_care zoo";
 
@@ -55,6 +55,9 @@ restService.post('/bot', function(req, res) {
         case 'nearest.roads':
             nearest_roads(res);
             break;
+        case 'place.autocomplete':
+            place_autocomplete(json, res);
+            break;
         default:
             console.log("This will never be the case!");
     }
@@ -72,7 +75,8 @@ function type_name(json, res)
     else url = withoutRadius;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
-        if (result.results.length == 0) helper.returnSpeech(res, "I don't have an answer for your question :(");
+        var x = Math.floor(Math.random() * zero.length);
+        if (result.results.length == 0) helper.returnSpeech(res, zero[x]);
         if (result.results.length < 3) speech = "I could find only " + result.results.length + ":\n";
         else
         {
@@ -89,31 +93,57 @@ function text_search(json, res)
 {
     var phrase = json.parameters.phrase;
     phrase.replace(/ /g, "+").replace(/\?/g, "");
-    // need i use location?
     // var url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?location='+lat+','+lng+'&query='+phrase+'&key='+placesAPI;
     var url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query='+phrase+'&key='+placesAPI;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
-        var x = Math.floor(Math.random() * head.length);
-        if (result.results.length == 0) helper.returnSpeech(res, "I don't have an answer for your question :( Perhaps you might want to ask a more precise question!");
+        var x = Math.floor(Math.random() * zero.length);
+        var y = Math.floor(Math.random() * head.length);
+        if (result.results.length == 0) helper.returnSpeech(res, zero[x]);
         if (result.results.length < 3) speech = "I could find only " + result.results.length + ":\n";
-        else speech = head[x];
+        else speech = head[y];
         for (var i = 0; i < 5 && i < result.results.length; i++)
             speech += "\n\n" + (i + 1) + ". " + result.results[i].name + " | " + result.results[i].formatted_address;
         helper.returnSpeech(res, speech);
     });
 }
 
+function place_autocomplete(json, res)
+{
+    var any = json.parameters.any;
+    var radius = json.parameters.radius;
+    if (radius < 0 || radius > 20000000) radius = 20000000;
+    if (json.parameters.types === undefined) var url = 'https://maps.googleapis.com/maps/api/place/autocomplete/json?strictbounds&input='+any+'&location='+lat+','+lng+'&radius='+radius+'&key='+placesAPI;
+    else
+    {
+        var types = json.parameters.types;
+        if (types === 'cities' || types === 'regions') var url = 'https://maps.googleapis.com/maps/api/place/autocomplete/json?strictbounds&input='+any+'&types=('+types+')&location='+lat+','+lng+'&radius='+radius+'&key='+placesAPI;
+        else var url = 'https://maps.googleapis.com/maps/api/place/autocomplete/json?strictbounds&input='+any+'&types='+types+'&location='+lat+','+lng+'&radius='+radius+'&key='+placesAPI;
+    }
+    helper.httpsGet(url, function(response) {
+        var result = JSON.parse(response);
+        var x = Math.floor(Math.random() * zero.length);
+        var y = Math.floor(Math.random() * head.length);
+        if (result.predictions.length == 0) helper.returnSpeech(res, zero[x]);
+        if (result.predictions.length < 3) speech = "I could find only " + result.predictions.length + ":\n";
+        else speech = head[y];
+        for (var i = 0; i < 5 && i < result.predictions.length; i++)
+            speech += "\n\n" + (i + 1) + ". " + result.predictions[i].description;
+        helper.returnSpeech(res, speech);
+    });
+}
 
 function type_info(json, res) 
 {
     var keyword = json.parameters.type_original;
     keyword.replace(/ /g, "+").replace(/\?/g, "");
+    // need i use location? ans: yes; eg: for query "is chase open now", you need the chase nearest to user
+    var url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?location='+lat+','+lng+'&query='+keyword+'&key='+placesAPI;
     // var url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&rankby=distance&keyword='+keyword+'&key='+placesAPI;
-    var url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query='+keyword+'&key='+placesAPI;
+    // var url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?query='+keyword+'&key='+placesAPI;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
-        var x = Math.floor(Math.random() * head.length);
+        var x = Math.floor(Math.random() * zero.length);
         if (result.results.length == 0) helper.returnSpeech(res, zero[x]);
         else 
         {
@@ -131,7 +161,8 @@ function type_info(json, res)
                         case 'rating':
                         {
                             var rating = result.result.rating;
-                            speech = "Rating of " + name + ": " + rating;
+                            if (rating === undefined) speech = "I don't have " + name + "'s rating in my database.";
+                            else speech = "Rating of " + name + ": " + rating;
                             break;
                         }
 
@@ -145,20 +176,22 @@ function type_info(json, res)
                         case 'international_phone_number':
                         {
                             var international_phone_number = result.result.international_phone_number;
-                            speech = "Contact of " + name  + ": " + international_phone_number;
+                            if (international_phone_number === undefined) speech = "I don't have their phone number in my database.";
+                            else speech = "Contact of " + name  + ": " + international_phone_number;
                             break;
                         }    
 
                         case 'formatted_address':
                         {
                             var formatted_address = result.result.formatted_address;
-                            speech = "Address of " + name + ": " + formatted_address;
+                            if (formatted_address === undefined) speech = "I don't have their address in my database.";
+                            else speech = "Address of " + name + ": " + formatted_address;
                             break;
                         }
 
                         case 'opening_hours':
                         {
-                            if (result.result.opening_hours === undefined) speech = "I'm not really sure if they're open. Sorry! Perhaps you'd like to know about other places?";
+                            if (result.result.opening_hours === undefined) speech = "I'm not really sure if " + name + " is open. Sorry!";
                             else
                             {
                                 var opening_hours = result.result.opening_hours.open_now;
@@ -170,20 +203,30 @@ function type_info(json, res)
 
                         case 'reviews':
                         {
+                            if (result.result.reviews === undefined)
+                            {
+                                speech = "I don't have any reviews of " + name + " in my database.";
+                                break;
+                            }
                             var reviews = '';
                             for (var i = 0; i < result.result.reviews.length && i < 3; i++)
-                            if (result.result.reviews[i].text)
-                            {
-                                reviews += "\n" + (i + 1) + ". Name: " + result.result.reviews[i].author_name + " | Rating: " + result.result.reviews[i].aspects[0].rating;
-                                reviews += "\nReview: " + result.result.reviews[i].text;                
-                            }
-                            speech = "Reviews of " + name + ":\n";
+                                if (result.result.reviews[i].text)
+                                {
+                                    reviews += "\n" + (i + 1) + ". Name: " + result.result.reviews[i].author_name + " | Rating: " + result.result.reviews[i].aspects[0].rating;
+                                    reviews += "\nReview: " + result.result.reviews[i].text;                
+                                }
+                            speech = "Here's what people say about " + name + ":\n";
                             speech += reviews;
                             break;
                         }
                     
                         case 'photos':
                         {   
+                            if (result.result.photos === undefined)
+                            {
+                                speech = "I don't have any photos of " + name + " in my database.";
+                                break;
+                            }
                             var x = Math.floor((Math.random() * result.result.photos.length));
                             var photo = result.result.photos[x].html_attributions[0];
                             var start = 9;
