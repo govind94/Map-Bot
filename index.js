@@ -3,12 +3,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 var helper = require('./helper');
-var ipinfoAPI = '06fa9a46e07d49f65936a81ee009395ffc07bd437c9f71ee74371135406605ca';
-var placesAPI = 'AIzaSyCjuvR8Wfdzg2e3EVmU30Lun8hcmxyeSLo';
-var directionsAPI = 'AIzaSyDBuY63041R_cpalQykTqpuFRvm_zz1EKA';
-var geocodingAPI = 'AIzaSyDWk0jqpQ0UTAMIO9zKw6O8UrSHGfwjpts';
-var nearestRoadsAPI = 'AIzaSyB6NH1Sdv6K7rCc0JkONcV8e4pu-yF_YpE'
 
+// var ipinfoAPI = /* YOUR_API_KEY */
+// var placesAPI = /* YOUR_API_KEY */
+// var directionsAPI = /* YOUR_API_KEY */
+// var geocodingAPI = /* YOUR_API_KEY */
+// var nearestRoadsAPI = /* YOUR_API_KEY */
+
+    
 const restService = express();
 
 restService.use(bodyParser.urlencoded({
