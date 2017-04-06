@@ -20,6 +20,7 @@ restService.use(bodyParser.urlencoded({
 restService.use(bodyParser.json());
 
 // My Location: 40.48850079103278, -74.43782866001129
+var data = {};
 var speech = '';
 var lat;
 var lng;
@@ -38,12 +39,6 @@ restService.post('/bot', function(req, res) {
     {
         case 'type.name':
             type_name(json, res);
-            /*if (str.includes(json.parameters.type)) type_name(json, res);
-            else 
-            {
-                speech = "I cannot answer something I have absolutely no idea about! If you want to search for a specific place, please type \"Specific requests\".";
-                helper.returnSpeech(res, speech);
-            }*/
             break;
         case 'type.info': 
             type_info(json, res);
@@ -59,6 +54,10 @@ restService.post('/bot', function(req, res) {
             break;
         case 'place.autocomplete':
             place_autocomplete(json, res);
+            break;
+        case 'directions':
+            if (json.parameters.travel_mode === 'transit') html_directions_transit(json, res);
+            else if (json.parameters.travel_mode === 'driving') html_directions_driving(json, res);
             break;
         default:
             console.log("This will never be the case!");
@@ -131,6 +130,7 @@ function place_autocomplete(json, res)
         else speech = head[y];
         for (var i = 0; i < 5 && i < result.predictions.length; i++)
             speech += "\n\n" + (i + 1) + ". " + result.predictions[i].description;
+        speech += "\n\nNow that you have what you were searching for, would you like to know more these places?";
         helper.returnSpeech(res, speech);
     });
 }
@@ -214,7 +214,7 @@ function type_info(json, res)
                             for (var i = 0; i < result.result.reviews.length && i < 3; i++)
                                 if (result.result.reviews[i].text)
                                 {
-                                    reviews += "\n" + (i + 1) + ". Name: " + result.result.reviews[i].author_name + " | Rating: " + result.result.reviews[i].aspects[0].rating;
+                                    reviews += "\n\n" + (i + 1) + ". Name: " + result.result.reviews[i].author_name + " | Rating: " + result.result.reviews[i].aspects[0].rating;
                                     reviews += "\nReview: " + result.result.reviews[i].text;                
                                 }
                             speech = "Here's what people say about " + name + ":\n";
@@ -230,16 +230,27 @@ function type_info(json, res)
                                 break;
                             }
                             var x = Math.floor((Math.random() * result.result.photos.length));
-                            var photo = result.result.photos[x].html_attributions[0];
-                            var start = 9;
-                            var end = photo.indexOf("\">");
-                            var url = photo.substring(start, end);
-                            speech = "\nClick the link: \n";
-                            speech += url;
+                            var reference = result.result.photos[x].photo_reference;
+                            var width = result.result.photos[x].width;
+                            speech = "Here's a photo";
+                            data = {
+                                "facebook":
+                                {
+                                    "attachment": 
+                                    {
+                                        "type": "image",
+                                        "payload":
+                                        {
+                                            "url": 'https://maps.googleapis.com/maps/api/place/photo?maxwidth='+width+'&photoreference='+reference+'&key='+placesAPI
+                                        }
+                                    }
+                                }
+                            }
                             break;
                         }
                     }
-                    helper.returnSpeech(res, speech);
+                    if (jsonKey === "photos") helper.returnSpeechWithData(res, speech, data);
+                    else helper.returnSpeech(res, speech);
                 }
             });
         }
@@ -268,8 +279,10 @@ function html_directions_driving(json, res)
 
 function html_directions_transit(json, res) 
 {
-    var source = json.parameters.directions.source;
-    var destination = json.parameters.directions.destination;
+    var source;
+    if (json.parameters.source === undefined) source = lat+','+lng;
+    else source = json.parameters.source;
+    var destination = json.parameters.destination;
     var url = 'https://maps.googleapis.com/maps/api/directions/json?mode=transit&transit_mode=train&origin='+source+'&destination='+destination+'&key='+directionsAPI;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
@@ -300,7 +313,7 @@ function html_directions_transit(json, res)
                 speech += "-> Arrival Time: " + jsonTwo.arrival_time.text + "\n";
             }
         }
-        speech += "The total travel time is " + result.routes[0].legs[0].duration.text;
+        speech += "\nThe total travel time is " + result.routes[0].legs[0].duration.text;
         helper.returnSpeech(res, speech);
     });
 }
