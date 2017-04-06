@@ -22,5 +22,16 @@ function returnSpeech(res, speech)
     });
 }
 
+function returnSpeechWithData(res, speech, data)
+{
+    return res.json({
+        speech: speech,
+        data: data,
+        displayText: speech,
+        source: 'googleapis'
+    });
+}
+
 exports.httpsGet = httpsGet;
 exports.returnSpeech = returnSpeech;
+exports.returnSpeechWithData = returnSpeechWithData;
