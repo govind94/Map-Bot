@@ -10,7 +10,6 @@ var helper = require('./helper');
 // var geocodingAPI = /* YOUR_API_KEY */
 // var nearestRoadsAPI = /* YOUR_API_KEY */
 
-    
 const restService = express();
 
 restService.use(bodyParser.urlencoded({
@@ -67,26 +66,42 @@ restService.post('/bot', function(req, res) {
 function type_name(json, res) 
 {
     var url;
+    var sample;
     var type = json.parameters.type;
+    //if (type == "") helper.returnSpeech(res, "Where do you wanna go?");
     type.replace(/ /g, "+").replace(/\?/g, "");
     // what if type not in the list?
-    var withRadius = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&radius=5000&rankby=prominence&type='+type+'&keyword='+type+'&key='+placesAPI;
-    var withoutRadius = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&rankby=distance&type='+type+'&keyword='+type+'&key='+placesAPI;
-    if (json.parameters.rankby == 'prominence') url = withRadius;
-    else url = withoutRadius;
+    var baseUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&type='+type+'&key='+placesAPI;;
+    if (json.parameters.rankby == 'prominence') url = baseUrl + '&radius=5000&rankby=prominence&keyword=' + type;
+    else url = baseUrl + '&rankby=distance&keyword=' + type;
+    /*
     helper.httpsGet(url, function(response) {
-        var result = JSON.parse(response);
-        var x = Math.floor(Math.random() * zero.length);
-        if (result.results.length == 0) helper.returnSpeech(res, zero[x]);
-        if (result.results.length < 3) speech = "I could find only " + result.results.length + ":\n";
-        else
+        var result1 = JSON.parse(response);
+        if (result1.results.length == 0) 
         {
-            if (json.parameters.rankby == 'prominence') speech = "Here are some of the most prominent ones:\n";
-            else speech = "Here are some of the nearest ones:\n";
+            helper.httpsGet(baseUrl+'&rankby=distance', function(response) {
+            var result2 = JSON.parse(response);
+            if (result2.results.length == 0) helper.returnSpeech(res, "I couldn't find what you were looking for. As a reminder,  I am searching for places based on your location only. To look up places far away, type \"Specific requests\" or \"Info about places\".");
+            else type_name_helper(result2, res);
+            });       
         }
-        for (var i = 0; i < 5 && i < result.results.length; i++)
-            speech += "\n\n" + (i + 1) + ". " + result.results[i].name + " | " + result.results[i].vicinity;
-        helper.returnSpeech(res, speech);
+        else type_name_helper(result1, res);
+    });
+    */
+    var x = Math.floor(Math.random() * head.length);
+    helper.httpsGet(url, function(response) {
+        var result1 = JSON.parse(response);
+        var length1 = result1.results.length;
+        helper.httpsGet(baseUrl+'&rankby=distance', function(response) {
+            var result2 = JSON.parse(response);
+            var length2 = result2.results.length;
+            if (length1 == 0 && length2 == 0) helper.returnSpeech(res, "I couldn't find what you were looking for. As a reminder,  I am searching for places based on your location only. To look up places far away, type \"Specific requests\" or \"Info about places\".");
+            else
+            {
+                var result = (length1 > length2) ? result1 : result2;
+                helper.type_name_helper(result, res, head[x]);
+            }
+        });
     });
 }
 
