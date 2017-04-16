@@ -3,4 +3,4 @@ A chatbot interface to Google/Bing Maps. I have used API.AI for natural language
 
 
 
-                ----- STILL WORKING ON THIS -----
+                                          ----- WORK IN PROGRESS -----
