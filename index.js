@@ -21,14 +21,15 @@ restService.use(bodyParser.json());
 
 var data = {};
 var speech = '';
-var lat;
-var lng;
+var lat = 40.4886616;
+var lng = -74.4381389;
 var head = ["I hope you find this helpful :)\n", "Here you go ;)\n", "I found these for you :D\n", "You might wanna check these out :P\n", "I got something for you :D\n", "It's your lucky day coz look what I found :P\n", "You're gonna love these ;)\n", "How about these? :)\n", "Look what I found for you :D\n", "Thank me later :P\n"];
 var zero = ["I don't have an answer for your question :(", "Well, I tried everything I could but to no avail. :|", "Seems to me like there's something wrong with your request.", "Oops, I couldn't find anything! :("];
 
+// types
 // var str = "airport movie_theater restaurant hindu_temple doctor accounting amusement_park aquarium art_gallery atm bakery bank bar beauty_salon bicycle_store book_store bowling_alley bus_station cafe campground car_dealer car_rentel car_repair car_wash casino cemetery church city_hall clothing_store convenience_store courthouse department_store dentist electrician electronics_store embassy fire_station florist funeral_home furniture_store gas_station gym hair_care hardware_store home_goods_store hospital insurance_agency jewelry_store laundry lawyer library liquor_store local_government_office locksmith lodging meal_delivery meal_takeaway mosque movie_rentel moving_company museum night_club painter park parking pet_store pharmacy physiotherapist plumber police post_office real_estate_agency roofing_contractor rv_park school shoe_store shopping_mall spa stadium storage store subway_station synagogue taxi_stand train_station transit_station travel_agency university veterinary_care zoo";
 
-ipInfo();
+// ipInfo();
 
 restService.post('/bot', function(req, res) {
     var json = req.body.result;
@@ -60,7 +61,7 @@ restService.post('/bot', function(req, res) {
             break;
         case 'directions':
             if (json.parameters.travel_mode === 'transit') html_directions_transit(json, res);
-            else if (json.parameters.travel_mode === 'driving') html_directions_driving(json, res);
+            else html_directions_driving(json, res);
             break;
         default:
             console.log("This will never be the case!");
@@ -91,7 +92,9 @@ function type_name(json, res)
             else
             {
                 var result;
-                if ((result1.results[0].name).includes("Riverside") == true) result = result2;
+                if (length1 == 0) result = result2;
+                else if (length2 == 0) result = result1;
+                else if ((result1.results[0].name).includes("Riverside") == true) result = result2;
                 else if ((result2.results[0].name).includes("Riverside") == true) result = result1;
                 else result = (length1 > length2) ? result1 : result2;
                 helper.type_name_helper(result, res, head[x]);
@@ -317,9 +320,11 @@ function type_info(json, res)
 
 function html_directions_driving(json, res) 
 {
-    var source = json.parameters.directions.source;
-    var destination = json.parameters.directions.destination;
-    speech = "Directions provided by Google:\n\n";
+    var source;
+    //var source = json.parameters.directions.source;
+    source = lat+','+lng;
+    var destination = json.parameters.destination;
+    speech = "Directions:\n\n";
     var url = 'https://maps.googleapis.com/maps/api/directions/json?origin='+source+'&destination='+destination+'&key='+directionsAPI;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
@@ -338,13 +343,14 @@ function html_directions_driving(json, res)
 function html_directions_transit(json, res) 
 {
     var source;
-    if (json.parameters.source === undefined) source = lat+','+lng;
-    else source = json.parameters.source;
+    //if (json.parameters.source === undefined) source = lat+','+lng;
+    //else source = json.parameters.source;
+    source = lat+','+lng;
     var destination = json.parameters.destination;
     var url = 'https://maps.googleapis.com/maps/api/directions/json?mode=transit&transit_mode=train&origin='+source+'&destination='+destination+'&key='+directionsAPI;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
-        var speech = "Directions provided by Google\n\n";
+        var speech = "Directions:\n\n";
         var jsonOne = result.routes[0].legs[0].steps;
         for (var i = 0; i < jsonOne.length; i++) 
         {
