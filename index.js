@@ -26,11 +26,6 @@ var lng = -74.4381389;
 var head = ["I hope you find this helpful :)\n", "Here you go ;)\n", "I found these for you :D\n", "You might wanna check these out :P\n", "I got something for you :D\n", "It's your lucky day coz look what I found :P\n", "You're gonna love these ;)\n", "How about these? :)\n", "Look what I found for you :D\n", "Thank me later :P\n"];
 var zero = ["I don't have an answer for your question :(", "Well, I tried everything I could but to no avail. :|", "Seems to me like there's something wrong with your request.", "Oops, I couldn't find anything! :("];
 
-// types
-// var str = "airport movie_theater restaurant hindu_temple doctor accounting amusement_park aquarium art_gallery atm bakery bank bar beauty_salon bicycle_store book_store bowling_alley bus_station cafe campground car_dealer car_rentel car_repair car_wash casino cemetery church city_hall clothing_store convenience_store courthouse department_store dentist electrician electronics_store embassy fire_station florist funeral_home furniture_store gas_station gym hair_care hardware_store home_goods_store hospital insurance_agency jewelry_store laundry lawyer library liquor_store local_government_office locksmith lodging meal_delivery meal_takeaway mosque movie_rentel moving_company museum night_club painter park parking pet_store pharmacy physiotherapist plumber police post_office real_estate_agency roofing_contractor rv_park school shoe_store shopping_mall spa stadium storage store subway_station synagogue taxi_stand train_station transit_station travel_agency university veterinary_care zoo";
-
-// ipInfo();
-
 restService.post('/bot', function(req, res) {
     var json = req.body.result;
     console.log("1");
