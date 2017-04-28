@@ -68,11 +68,8 @@ function type_name(json, res)
     var url;
     var sample;
     var first = json.parameters.type;
-    //if (type == "") helper.returnSpeech(res, "Where do you wanna go?");
-    //type.replace(/ /g, "+").replace(/\?/g, "");
     var second = first.split('?').join('');
     var type = second.split(' ').join('+');
-    // what if type not in the list?
     var baseUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&type='+type+'&key='+placesAPI;;
     if (json.parameters.rankby == 'prominence') url = baseUrl + '&radius=5000&rankby=prominence&keyword=' + type;
     else url = baseUrl + '&rankby=distance&keyword=' + type;
