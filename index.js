@@ -26,9 +26,14 @@ var lng = -74.4381389;
 var head = ["I hope you find this helpful :)\n", "Here you go ;)\n", "I found these for you :D\n", "You might wanna check these out :P\n", "I got something for you :D\n", "It's your lucky day coz look what I found :P\n", "You're gonna love these ;)\n", "How about these? :)\n", "Look what I found for you :D\n", "Thank me later :P\n"];
 var zero = ["I don't have an answer for your question :(", "Well, I tried everything I could but to no avail. :|", "Seems to me like there's something wrong with your request.", "Oops, I couldn't find anything! :("];
 
+// types
+// var str = "airport movie_theater restaurant hindu_temple doctor accounting amusement_park aquarium art_gallery atm bakery bank bar beauty_salon bicycle_store book_store bowling_alley bus_station cafe campground car_dealer car_rentel car_repair car_wash casino cemetery church city_hall clothing_store convenience_store courthouse department_store dentist electrician electronics_store embassy fire_station florist funeral_home furniture_store gas_station gym hair_care hardware_store home_goods_store hospital insurance_agency jewelry_store laundry lawyer library liquor_store local_government_office locksmith lodging meal_delivery meal_takeaway mosque movie_rentel moving_company museum night_club painter park parking pet_store pharmacy physiotherapist plumber police post_office real_estate_agency roofing_contractor rv_park school shoe_store shopping_mall spa stadium storage store subway_station synagogue taxi_stand train_station transit_station travel_agency university veterinary_care zoo";
+
+// ipInfo();
+
 restService.post('/bot', function(req, res) {
     var json = req.body.result;
-    console.log("1");
+    // console.log("1");
     var action = json.action;
     switch (action)
     {
@@ -68,8 +73,11 @@ function type_name(json, res)
     var url;
     var sample;
     var first = json.parameters.type;
+    //if (type == "") helper.returnSpeech(res, "Where do you wanna go?");
+    //type.replace(/ /g, "+").replace(/\?/g, "");
     var second = first.split('?').join('');
     var type = second.split(' ').join('+');
+    // what if type not in the list?
     var baseUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+lat+','+lng+'&type='+type+'&key='+placesAPI;;
     if (json.parameters.rankby == 'prominence') url = baseUrl + '&radius=5000&rankby=prominence&keyword=' + type;
     else url = baseUrl + '&rankby=distance&keyword=' + type;
@@ -112,7 +120,7 @@ function type_name_static_map(json, res)
                 "type": "image",
                 "payload":
                 {
-                    "url": 'http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/Routes?wp.0='+lat+','+lng+';64;S&wp.1='+destination+';66;D&key='+bingMapsAPI
+                    "url": 'http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/Routes?wp.0=40.488498751115436,-74.43769991397858;64;S&wp.1='+destination+';66;D&key='+bingMapsAPI
                 }
             }
         }
@@ -202,13 +210,20 @@ function type_info(json, res)
                 else 
                 {
                     var name = result.result.name;
+                    var formatted_address = result.result.formatted_address;
+                    // var vicinity = result.result.vicinity;
                     switch (jsonKey)
                     {
                         case 'rating':
                         {
                             var rating = result.result.rating;
                             if (rating === undefined) speech = "I don't have " + name + "'s rating in my database.";
-                            else speech = "Rating of " + name + ": " + rating;
+                            else 
+                            {
+                                speech = "Rating of " + name + ": " + rating;
+                                speech += "\nThey are located at " + formatted_address;
+                                speech += "\nWould you like to go there now? Copy and paste their address.";
+                            }
                             break;
                         }
 
@@ -216,6 +231,8 @@ function type_info(json, res)
                         {
                             var website = result.result.website;
                             speech = "Website of " + name + ": " + website;
+                            speech += "\nThis is their address: " + formatted_address;
+                            speech += "\nPerhaps you're interested in going to " + name + "? If you are, copy and paste their address.";
                             break;
                         }
 
@@ -223,15 +240,23 @@ function type_info(json, res)
                         {
                             var international_phone_number = result.result.international_phone_number;
                             if (international_phone_number === undefined) speech = "I don't have their phone number in my database.";
-                            else speech = "Contact of " + name  + ": " + international_phone_number;
+                            else 
+                            {
+                                speech = "Contact of " + name  + ": " + international_phone_number;
+                                speech += "\nThis is their address: " + formatted_address;
+                                speech += "\nIf you want directions to " + name + ", copy and paste their address.";
+                            }
                             break;
                         }    
 
                         case 'formatted_address':
                         {
-                            var formatted_address = result.result.formatted_address;
                             if (formatted_address === undefined) speech = "I don't have their address in my database.";
-                            else speech = "Address of " + name + ": " + formatted_address;
+                            else
+                            {
+                                speech = "Address of " + name + ": " + formatted_address;
+                                speech += "\nSince your asking for their address, maybe you want to go there now? If yes, copy and paste their address.";
+                            }
                             break;
                         }
 
@@ -244,10 +269,9 @@ function type_info(json, res)
                                 if (opening_hours)
                                 {
                                     speech = name + " is open now."; // replace()
-                                    var vicinity = result.result.vicinity;
-                                    if (vicinity != undefined)
+                                    if (formatted_address != undefined)
                                     {
-                                        speech += " The one closest to you (which is open) is at " + vicinity;
+                                        speech += " The one closest to you (which is open) is at " + formatted_address;
                                         speech += ".\n\nIf you want to go there now, copy and paste their address.";
                                     }
                                 }
@@ -391,7 +415,7 @@ function nearest_roads(res)
     var url = 'https://roads.googleapis.com/v1/nearestRoads?points='+lat+','+lng+'&key='+nearestRoadsAPI;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
-        console.log(result);
+        // console.log(result);
         var placeId = result.snappedPoints[0].placeId;
         url = 'https://maps.googleapis.com/maps/api/place/details/json?placeid='+placeId+'&key='+placesAPI;
         helper.httpsGet(url, function(response) {
@@ -407,7 +431,7 @@ function ipInfo()
     // public IP - mine: 69.116.29.239; 10R: 69.116.24.253
     // train station - 69.114.144.21
     // ruwireless - 128.6.37.122
-    var url = 'https://api.ipinfodb.com/v3/ip-city/?format=json&ip=69.116.29.239&key='+ipinfoAPI;
+    var url = 'https://api.ipinfodb.com/v3/ip-city/?format=json&ip=128.6.37.122&key='+ipinfoAPI;
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
         lat = result.latitude - 0.05120124888;
