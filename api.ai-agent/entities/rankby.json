@@ -1,0 +1,42 @@
+{
+  "id": "ad33ebd6-373b-40b1-8377-6a9c528a390c",
+  "name": "rankby",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "prominence",
+      "synonyms": [
+        "famous",
+        "renowned",
+        "well known",
+        "eminent",
+        "notable",
+        "prominent",
+        "good",
+        "nice",
+        "fancy",
+        "luxurious",
+        "best",
+        "prominence",
+        "eminence"
+      ]
+    },
+    {
+      "value": "distance",
+      "synonyms": [
+        "close by",
+        "not far away",
+        "vicinity",
+        "neighbourhood",
+        "nearby",
+        "closest",
+        "nearest",
+        "near me",
+        "in the vicinity",
+        "distance"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

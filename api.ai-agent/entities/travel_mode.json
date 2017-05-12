@@ -1,0 +1,42 @@
+{
+  "id": "d94fdb98-7209-4138-93d8-edbe21e72471",
+  "name": "travel_mode",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "driving",
+      "synonyms": [
+        "driving",
+        "drive"
+      ]
+    },
+    {
+      "value": "walking",
+      "synonyms": [
+        "walking",
+        "run"
+      ]
+    },
+    {
+      "value": "bicycling",
+      "synonyms": [
+        "bicycling",
+        "cycle",
+        "motorcycle"
+      ]
+    },
+    {
+      "value": "transit",
+      "synonyms": [
+        "transit",
+        "train",
+        "bus",
+        "subway",
+        "tram",
+        "rail"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

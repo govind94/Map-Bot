@@ -1,0 +1,74 @@
+{
+  "id": "3457b2e9-2b87-450a-a374-6a70c39e6b1a",
+  "name": "json_key",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "photos",
+      "synonyms": [
+        "photos",
+        "picture",
+        "snap",
+        "photograph",
+        "photo"
+      ]
+    },
+    {
+      "value": "rating",
+      "synonyms": [
+        "rating",
+        "ranking",
+        "rate",
+        "rank"
+      ]
+    },
+    {
+      "value": "formatted_address",
+      "synonyms": [
+        "vicinity",
+        "address",
+        "where is"
+      ]
+    },
+    {
+      "value": "international_phone_number",
+      "synonyms": [
+        "number",
+        "phone number",
+        "contact",
+        "get in touch"
+      ]
+    },
+    {
+      "value": "reviews",
+      "synonyms": [
+        "reviews",
+        "review",
+        "how good is"
+      ]
+    },
+    {
+      "value": "website",
+      "synonyms": [
+        "website",
+        "internet",
+        "menu",
+        "info",
+        "information"
+      ]
+    },
+    {
+      "value": "opening_hours",
+      "synonyms": [
+        "open",
+        "could i go",
+        "could i take",
+        "is it open",
+        "should i take",
+        "opening hours"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

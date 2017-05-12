@@ -1,0 +1,714 @@
+{
+  "id": "6d6ac6f8-7ff7-4504-a145-8ddd4848ac9f",
+  "name": "type",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "airport",
+      "synonyms": [
+        "airport",
+        "airports",
+        "fly",
+        "flight"
+      ]
+    },
+    {
+      "value": "movie_theater",
+      "synonyms": [
+        "movies",
+        "movie theatre",
+        "movie theater",
+        "cinema theatre"
+      ]
+    },
+    {
+      "value": "restaurant",
+      "synonyms": [
+        "restaurants",
+        "dinner",
+        "lunch",
+        "breakfast",
+        "eat",
+        "diner",
+        "hungry",
+        "starving"
+      ]
+    },
+    {
+      "value": "hindu_temple",
+      "synonyms": [
+        "temple",
+        "hindu temple",
+        "god"
+      ]
+    },
+    {
+      "value": "doctor",
+      "synonyms": [
+        "doctor",
+        "fever",
+        "sick",
+        "not feeling well",
+        "unwell",
+        "ill",
+        "check my health"
+      ]
+    },
+    {
+      "value": "accounting",
+      "synonyms": [
+        "accounting",
+        "tax",
+        "tax accountant"
+      ]
+    },
+    {
+      "value": "amusement_park",
+      "synonyms": [
+        "amusement park",
+        "fun places to go",
+        "fun park",
+        "theme park",
+        "exhibition",
+        "circus",
+        "fun fair",
+        "amusement show",
+        "fun things to do",
+        "roller coaster",
+        "ferris wheel",
+        "fun ride"
+      ]
+    },
+    {
+      "value": "aquarium",
+      "synonyms": [
+        "aquarium",
+        "fish",
+        "shark",
+        "turtle"
+      ]
+    },
+    {
+      "value": "art_gallery",
+      "synonyms": [
+        "art gallery",
+        "art",
+        "painting",
+        "paintings"
+      ]
+    },
+    {
+      "value": "atm",
+      "synonyms": [
+        "atm",
+        "cash",
+        "money",
+        "out of cash",
+        "withdraw money",
+        "deposit money",
+        "deposit cash",
+        "withdraw cash"
+      ]
+    },
+    {
+      "value": "bakery",
+      "synonyms": [
+        "bakery",
+        "cake",
+        "dessert",
+        "bread"
+      ]
+    },
+    {
+      "value": "bank",
+      "synonyms": [
+        "bank",
+        "bank account",
+        "savings account",
+        "checking account",
+        "store money"
+      ]
+    },
+    {
+      "value": "bar",
+      "synonyms": [
+        "bar",
+        "pubs",
+        "pub",
+        "drinks",
+        "beer",
+        "alcohol",
+        "wine",
+        "drink"
+      ]
+    },
+    {
+      "value": "beauty_salon",
+      "synonyms": [
+        "beauty salon",
+        "salon",
+        "nail",
+        "pedicure",
+        "manicure"
+      ]
+    },
+    {
+      "value": "bicycle_store",
+      "synonyms": [
+        "bicycle store",
+        "bicycle",
+        "motorcycle"
+      ]
+    },
+    {
+      "value": "book_store",
+      "synonyms": [
+        "book store",
+        "buy books",
+        "rent a book",
+        "books",
+        "buy a book"
+      ]
+    },
+    {
+      "value": "bowling_alley",
+      "synonyms": [
+        "bowling alley",
+        "bowling lane",
+        "go bowling"
+      ]
+    },
+    {
+      "value": "bus_station",
+      "synonyms": [
+        "bus station",
+        "take a bus",
+        "bus stops",
+        "board a bus"
+      ]
+    },
+    {
+      "value": "cafe",
+      "synonyms": [
+        "cafe",
+        "cafeteria",
+        "coffee",
+        "tea",
+        "cappuccino",
+        "iced tea",
+        "ice tea"
+      ]
+    },
+    {
+      "value": "campground",
+      "synonyms": [
+        "campground"
+      ]
+    },
+    {
+      "value": "car_dealer",
+      "synonyms": [
+        "car dealer",
+        "buy a car"
+      ]
+    },
+    {
+      "value": "car_rental",
+      "synonyms": [
+        "car rental",
+        "rent a car"
+      ]
+    },
+    {
+      "value": "car_repair",
+      "synonyms": [
+        "car repair",
+        "car mechanic",
+        "puncture",
+        "punctured",
+        "engine oil",
+        "repair center"
+      ]
+    },
+    {
+      "value": "car_wash",
+      "synonyms": [
+        "car wash",
+        "clean my car",
+        "car is dirty",
+        "car washed",
+        "wash my car"
+      ]
+    },
+    {
+      "value": "casino",
+      "synonyms": [
+        "casino",
+        "gambling",
+        "gamble",
+        "blackjack",
+        "poker",
+        "roulette"
+      ]
+    },
+    {
+      "value": "cemetery",
+      "synonyms": [
+        "cemetery",
+        "dead people"
+      ]
+    },
+    {
+      "value": "church",
+      "synonyms": [
+        "church",
+        "jesus",
+        "pray",
+        "spiritual",
+        "religious",
+        "christian worship"
+      ]
+    },
+    {
+      "value": "city_hall",
+      "synonyms": [
+        "city hall"
+      ]
+    },
+    {
+      "value": "clothing_store",
+      "synonyms": [
+        "clothing store",
+        "shopping mall",
+        "buy clothes",
+        "shirts",
+        "jeans"
+      ]
+    },
+    {
+      "value": "convenience_store",
+      "synonyms": [
+        "convenience store"
+      ]
+    },
+    {
+      "value": "courthouse",
+      "synonyms": [
+        "courthouse",
+        "court"
+      ]
+    },
+    {
+      "value": "department_store",
+      "synonyms": [
+        "department store"
+      ]
+    },
+    {
+      "value": "dentist",
+      "synonyms": [
+        "dentist",
+        "tooth ache",
+        "cavity",
+        "discomfort in my teeth"
+      ]
+    },
+    {
+      "value": "electrician",
+      "synonyms": [
+        "electrician"
+      ]
+    },
+    {
+      "value": "electronics_store",
+      "synonyms": [
+        "electronics store",
+        "buy a phone",
+        "buy a laptop",
+        "buy a TV"
+      ]
+    },
+    {
+      "value": "embassy",
+      "synonyms": [
+        "embassy"
+      ]
+    },
+    {
+      "value": "fire_station",
+      "synonyms": [
+        "fire station",
+        "on fire"
+      ]
+    },
+    {
+      "value": "florist",
+      "synonyms": [
+        "florist",
+        "bouquet",
+        "buy flowers"
+      ]
+    },
+    {
+      "value": "funeral_home",
+      "synonyms": [
+        "funeral home"
+      ]
+    },
+    {
+      "value": "furniture_store",
+      "synonyms": [
+        "furniture store",
+        "buy furniture",
+        "buy a mattress",
+        "buy a sofa"
+      ]
+    },
+    {
+      "value": "gas_station",
+      "synonyms": [
+        "gas station",
+        "fill gas",
+        "fuel",
+        "running out of gas"
+      ]
+    },
+    {
+      "value": "gym",
+      "synonyms": [
+        "gym",
+        "fitness",
+        "work out",
+        "reduce weight",
+        "lose weight",
+        "get fit",
+        "build muscle",
+        "out of shape",
+        "get in shape"
+      ]
+    },
+    {
+      "value": "hair_care",
+      "synonyms": [
+        "hair care",
+        "haircut",
+        "hair style",
+        "cut my hair",
+        "dandruff",
+        "hair products"
+      ]
+    },
+    {
+      "value": "hardware_store",
+      "synonyms": [
+        "hardware store",
+        "tool kit",
+        "screw driver"
+      ]
+    },
+    {
+      "value": "home_goods_store",
+      "synonyms": [
+        "home goods store"
+      ]
+    },
+    {
+      "value": "hospital",
+      "synonyms": [
+        "hospital",
+        "hospitals",
+        "sick",
+        "ill",
+        "unwell"
+      ]
+    },
+    {
+      "value": "insurance_agency",
+      "synonyms": [
+        "insurance agency"
+      ]
+    },
+    {
+      "value": "jewelry_store",
+      "synonyms": [
+        "jewelry store",
+        "buy a necklace",
+        "buy a ring"
+      ]
+    },
+    {
+      "value": "laundry",
+      "synonyms": [
+        "laundry",
+        "dry cleaning",
+        "dry clean"
+      ]
+    },
+    {
+      "value": "lawyer",
+      "synonyms": [
+        "lawyer",
+        "advocate"
+      ]
+    },
+    {
+      "value": "library",
+      "synonyms": [
+        "library",
+        "rent books"
+      ]
+    },
+    {
+      "value": "liquor_store",
+      "synonyms": [
+        "liquor store"
+      ]
+    },
+    {
+      "value": "local_government_office",
+      "synonyms": [
+        "local government office",
+        "post office",
+        "mayor’s office",
+        "municipal court"
+      ]
+    },
+    {
+      "value": "locksmith",
+      "synonyms": [
+        "locksmith",
+        "get a duplicate key",
+        "new lock"
+      ]
+    },
+    {
+      "value": "lodging",
+      "synonyms": [
+        "lodging",
+        "lodge",
+        "hotel"
+      ]
+    },
+    {
+      "value": "meal_delivery",
+      "synonyms": [
+        "meal delivery",
+        "food delivery",
+        "deliver food",
+        "order food"
+      ]
+    },
+    {
+      "value": "meal_takeaway",
+      "synonyms": [
+        "meal takeaway",
+        "takeout"
+      ]
+    },
+    {
+      "value": "mosque",
+      "synonyms": [
+        "mosque"
+      ]
+    },
+    {
+      "value": "movie_rental",
+      "synonyms": [
+        "movie rental",
+        "rent a movie",
+        "rent movies"
+      ]
+    },
+    {
+      "value": "moving_company",
+      "synonyms": [
+        "moving company"
+      ]
+    },
+    {
+      "value": "museum",
+      "synonyms": [
+        "museum"
+      ]
+    },
+    {
+      "value": "night_club",
+      "synonyms": [
+        "night club"
+      ]
+    },
+    {
+      "value": "painter",
+      "synonyms": [
+        "painter",
+        "paint my house"
+      ]
+    },
+    {
+      "value": "parking",
+      "synonyms": [
+        "parking",
+        "park my car"
+      ]
+    },
+    {
+      "value": "pet_store",
+      "synonyms": [
+        "pet store"
+      ]
+    },
+    {
+      "value": "physiotherapist",
+      "synonyms": [
+        "physiotherapist"
+      ]
+    },
+    {
+      "value": "plumber",
+      "synonyms": [
+        "plumber"
+      ]
+    },
+    {
+      "value": "police",
+      "synonyms": [
+        "police",
+        "cop",
+        "cops"
+      ]
+    },
+    {
+      "value": "post_office",
+      "synonyms": [
+        "post office",
+        "send a letter",
+        "mail",
+        "send a mail",
+        "post by mail"
+      ]
+    },
+    {
+      "value": "real_estate_agency",
+      "synonyms": [
+        "real estate agency",
+        "sell my house",
+        "buy a house"
+      ]
+    },
+    {
+      "value": "roofing_contractor",
+      "synonyms": [
+        "roofing contractor"
+      ]
+    },
+    {
+      "value": "rv_park",
+      "synonyms": [
+        "rv park"
+      ]
+    },
+    {
+      "value": "shoe_store",
+      "synonyms": [
+        "shoe store",
+        "sneakers",
+        "cleats",
+        "shoes"
+      ]
+    },
+    {
+      "value": "shopping_mall",
+      "synonyms": [
+        "shopping mall",
+        "mall"
+      ]
+    },
+    {
+      "value": "spa",
+      "synonyms": [
+        "spa",
+        "mud bath"
+      ]
+    },
+    {
+      "value": "stadium",
+      "synonyms": [
+        "stadium",
+        "indoor stadium"
+      ]
+    },
+    {
+      "value": "storage",
+      "synonyms": [
+        "storage"
+      ]
+    },
+    {
+      "value": "store",
+      "synonyms": [
+        "store"
+      ]
+    },
+    {
+      "value": "subway_station",
+      "synonyms": [
+        "subway station",
+        "subway stop"
+      ]
+    },
+    {
+      "value": "synagogue",
+      "synonyms": [
+        "synagogue"
+      ]
+    },
+    {
+      "value": "taxi_stand",
+      "synonyms": [
+        "taxi stand"
+      ]
+    },
+    {
+      "value": "train_station",
+      "synonyms": [
+        "train station"
+      ]
+    },
+    {
+      "value": "transit_station",
+      "synonyms": [
+        "transit station"
+      ]
+    },
+    {
+      "value": "travel_agency",
+      "synonyms": [
+        "travel agency",
+        "book hotels",
+        "plan trips",
+        "buy Flight tickets"
+      ]
+    },
+    {
+      "value": "veterinary_care",
+      "synonyms": [
+        "veterinary care",
+        "pet",
+        "dog",
+        "cat is sick",
+        "dog is sick"
+      ]
+    },
+    {
+      "value": "zoo",
+      "synonyms": [
+        "zoo",
+        "wild animals",
+        "tiger",
+        "lion"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

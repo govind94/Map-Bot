@@ -1,0 +1,33 @@
+{
+  "id": "5c3df83c-4872-4162-ba41-0f0a70cf4a7d",
+  "name": "autocomplete_type",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "address",
+      "synonyms": [
+        "address"
+      ]
+    },
+    {
+      "value": "establishment",
+      "synonyms": [
+        "establishment"
+      ]
+    },
+    {
+      "value": "regions",
+      "synonyms": [
+        "regions"
+      ]
+    },
+    {
+      "value": "cities",
+      "synonyms": [
+        "cities"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}
