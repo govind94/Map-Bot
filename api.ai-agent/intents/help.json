@@ -1,0 +1,150 @@
+{
+  "userSays": [
+    {
+      "id": "6ba7186c-28df-4878-b19d-217165f49d18",
+      "data": [
+        {
+          "text": "what else can i ask you"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "07388e83-6487-4a78-8aac-0bd3b1bd3ac1",
+      "data": [
+        {
+          "text": "what can you help me with"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7d2f3229-084a-4229-be0a-a80acd46358e",
+      "data": [
+        {
+          "text": "what are your features"
+        }
+      ],
+      "isTemplate": false,
+      "count": 2
+    },
+    {
+      "id": "b76f5743-0bce-49d3-89d9-95ce0dd8cc72",
+      "data": [
+        {
+          "text": "show me the options"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "007fe152-c990-4cf6-b217-10376c6f45ea",
+      "data": [
+        {
+          "text": "what are my options"
+        }
+      ],
+      "isTemplate": false,
+      "count": 2
+    },
+    {
+      "id": "c7bd03db-766d-49f2-b337-c3dfd970ede7",
+      "data": [
+        {
+          "text": "how do i talk to you"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a8f7cdbd-f1c7-421b-9138-2c41c819f88c",
+      "data": [
+        {
+          "text": "what do i ask"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c6ba4d3c-b404-4b97-859e-98116e21bfe1",
+      "data": [
+        {
+          "text": "what can i do"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4cfb396c-7ab0-4509-8b62-a1fa77dabeae",
+      "data": [
+        {
+          "text": "what should i do"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d4c50108-cf2b-42c7-a0d5-b028ad7facd2",
+      "data": [
+        {
+          "text": "help me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0bbe3939-03f9-4618-9de0-ad08a3e0bed6",
+      "data": [
+        {
+          "text": "help"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "717052a8-5302-49d7-8d1f-30d6a9673e3d",
+  "name": "help",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "help",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "You can ask me about places nearby (and far away :P), information about places (like ratings, reviews, contact, etc.), directions and so much more. So type away your questions :D"
+        },
+        {
+          "type": 2,
+          "title": "Choose from here:",
+          "replies": [
+            "Nearby Search",
+            "Specific Requests",
+            "Directions",
+            "Place Autocomplete",
+            "My location",
+            "Nearest Road",
+            "Help"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

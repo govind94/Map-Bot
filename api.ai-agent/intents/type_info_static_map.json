@@ -1,0 +1,84 @@
+{
+  "userSays": [
+    {
+      "id": "41700eac-c5cd-4af3-b85c-0b027fa604e6",
+      "data": [
+        {
+          "text": "2313 U.S. 1, North Brunswick Township",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ae3cbecb-754e-4a83-bd76-d79dd77c584e",
+      "data": [
+        {
+          "text": "335 George Street, New Brunswick",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "f9227f64-7236-44f6-ae6a-69671740e853",
+      "data": [
+        {
+          "text": "@sys.address:address"
+        }
+      ],
+      "isTemplate": true,
+      "count": 0
+    }
+  ],
+  "id": "1956b033-0fcf-4130-9fa7-78d9015cd6c9",
+  "parentId": "3edce147-e739-4556-82c4-a8b1fc6991b1",
+  "rootParentId": "3edce147-e739-4556-82c4-a8b1fc6991b1",
+  "name": "type_info_static_map",
+  "auto": true,
+  "contexts": [
+    "type_info-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "type.info.static.map",
+      "affectedContexts": [
+        {
+          "name": "type_info-followup",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.address",
+          "name": "address",
+          "value": "$address",
+          "prompts": [
+            "Please enter the address."
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Error!"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,192 @@
+{
+  "userSays": [
+    {
+      "id": "e8fd8271-9233-4eb1-acad-70fe491745a8",
+      "data": [
+        {
+          "text": "i want to go to "
+        },
+        {
+          "text": "50 halsey street newark",
+          "alias": "destination",
+          "meta": "@sys.address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f526a8d6-3c81-4a0d-9cdd-0d217281e1c7",
+      "data": [
+        {
+          "text": "i wanna "
+        },
+        {
+          "text": "drive",
+          "alias": "travel_mode",
+          "meta": "@travel_mode",
+          "userDefined": false
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "50 halsey street newark",
+          "alias": "destination",
+          "meta": "@sys.address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "98ef8102-6580-48e9-bfc1-f0c5ecf21f17",
+      "data": [
+        {
+          "text": "i want to go to "
+        },
+        {
+          "text": "155 washington street jersey city",
+          "alias": "destination",
+          "meta": "@sys.address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "109231d4-1e2c-4700-8a34-ebdf114f3437",
+      "data": [
+        {
+          "text": "33 commercial avenue new brunswick",
+          "alias": "source",
+          "meta": "@sys.address",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "432 b harrison avenue",
+          "alias": "destination",
+          "meta": "@sys.address",
+          "userDefined": true
+        },
+        {
+          "text": " by "
+        },
+        {
+          "text": "train",
+          "alias": "travel_mode",
+          "meta": "@travel_mode",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7ed911a4-72cd-42f3-9f1c-076daac2e102",
+      "data": [
+        {
+          "text": "@sys.address:source to @sys.address:destination"
+        }
+      ],
+      "isTemplate": true,
+      "count": 1
+    },
+    {
+      "id": "254cba67-766c-408e-ba35-6f918763ebef",
+      "data": [
+        {
+          "text": "10 commercial avenue new brunswick",
+          "alias": "source",
+          "meta": "@sys.address",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "155 washington street jersey city",
+          "alias": "destination",
+          "meta": "@sys.address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "e6c5eb75-b5bd-4cda-a786-6379dc46492b",
+  "name": "directions",
+  "auto": true,
+  "contexts": [
+    "direction"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "directions",
+      "affectedContexts": [
+        {
+          "name": "direction",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [
+        {
+          "required": false,
+          "dataType": "@sys.address",
+          "name": "source",
+          "value": "$source",
+          "prompts": [],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.address",
+          "name": "destination",
+          "value": "$destination",
+          "prompts": [
+            "Where do you want to go?"
+          ],
+          "isList": false
+        },
+        {
+          "dataType": "@travel_mode",
+          "name": "travel_mode",
+          "value": "$travel_mode",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "$directions.original"
+        },
+        {
+          "type": 1,
+          "title": "Google Maps",
+          "subtitle": "Directions",
+          "imageUrl": "https://lh3.googleusercontent.com/MOf9Kxxkj7GvyZlTZOnUzuYv0JAweEhlxJX6gslQvbvlhLK5_bSTK6duxY2xfbBsj43H\u003dw300",
+          "buttons": [
+            {
+              "text": "Tap for Directions",
+              "postback": "https://www.google.com/maps/dir///@40.4862862,-74.434976,15z"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

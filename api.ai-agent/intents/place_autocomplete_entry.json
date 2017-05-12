@@ -1,0 +1,84 @@
+{
+  "userSays": [
+    {
+      "id": "d2857fab-568f-474c-8016-c2569f47e200",
+      "data": [
+        {
+          "text": "help me with finding a place i have in mind"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "74ce14f2-53bb-4f99-9c21-0e4b5cc28197",
+      "data": [
+        {
+          "text": "i have a place in mind but can\u0027t remember"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f740097d-6155-4724-9ffa-22b7904dfe7f",
+      "data": [
+        {
+          "text": "i want to search for a place"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2e9987f8-fe3e-40fe-8242-44c228a800b6",
+      "data": [
+        {
+          "text": "place autocomplete"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "d41c838b-f4bc-440c-b09c-3a2135fc2987",
+  "name": "place_autocomplete_entry",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "place.autocomplete.entry",
+      "affectedContexts": [
+        {
+          "name": "place_autocomplete_context",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Great! Here\u0027s how this goes: You give me an incomplete word or phrase and I give you a list of suggestions based on that word or phrase. Ready?"
+        },
+        {
+          "type": 2,
+          "title": "Either type in the phrase, or, and this is optional, you can pick from below the type of place you\u0027re searching for:",
+          "replies": [
+            "address",
+            "establishment",
+            "regions",
+            "cities",
+            "geocode"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

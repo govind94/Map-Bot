@@ -1,0 +1,63 @@
+{
+  "userSays": [
+    {
+      "id": "2a71eed7-11eb-4099-b53b-6dbb3fe57772",
+      "data": [
+        {
+          "text": "can you help me with directions"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ffa3e2f6-94cb-40a2-bccd-983b89b9434d",
+      "data": [
+        {
+          "text": "directions"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1e6869ef-b9c5-4c9b-b1c8-30359f768a23",
+      "data": [
+        {
+          "text": "I want to know directions"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "e41de006-26a6-4c3e-9ac1-f5be04ea6a67",
+  "name": "directions_entry",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "directions.entry",
+      "affectedContexts": [
+        {
+          "name": "direction",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "I can help you with that! Please tell me the source and destination addresses along with your preferred mode of transit."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

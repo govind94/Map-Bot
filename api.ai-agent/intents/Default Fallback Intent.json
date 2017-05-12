@@ -1,0 +1,39 @@
+{
+  "userSays": [],
+  "id": "da0471a9-d6f0-4e81-9bc5-f905a2a9064f",
+  "name": "Default Fallback Intent",
+  "auto": false,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "I didn\u0027t quite get you. Here are some options you can choose from."
+        },
+        {
+          "type": 2,
+          "title": "Your choice:",
+          "replies": [
+            "Nearby Search",
+            "Specific Requests",
+            "Directions",
+            "Place Autocomplete",
+            "My Location",
+            "Nearest Road",
+            "Help"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": []
+}

@@ -1,0 +1,2315 @@
+{
+  "userSays": [
+    {
+      "id": "6c6ab5da-44ba-4d31-8e89-332ace3b5e1d",
+      "data": [
+        {
+          "text": "where can i get my "
+        },
+        {
+          "text": "car washed",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2dfe6db5-e052-45a4-8680-88fd55c23f71",
+      "data": [
+        {
+          "text": "where do you think i should "
+        },
+        {
+          "text": "buy a TV",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4586b6d5-8f31-440d-a7ee-6fd98187e527",
+      "data": [
+        {
+          "text": "Find a person who can "
+        },
+        {
+          "text": "check my health",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3a1caab8-2102-4e77-94b7-1c5cff606e3f",
+      "data": [
+        {
+          "text": "I am feeling "
+        },
+        {
+          "text": "discomfort in my teeth",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b8a37d1a-27dc-4f84-ba40-acc50cd443cb",
+      "data": [
+        {
+          "text": "Show me the "
+        },
+        {
+          "text": "best",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " place to buy "
+        },
+        {
+          "text": "jeans",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "near me",
+          "alias": "rankby1",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "146777df-d35e-4baf-b5b4-3eb00d1c2361",
+      "data": [
+        {
+          "text": "I need to "
+        },
+        {
+          "text": "Christian worship",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " place."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7d834b4a-6678-49f4-a82f-c055ccd8c10a",
+      "data": [
+        {
+          "text": "I want to play "
+        },
+        {
+          "text": "poker",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0ef85758-f5b1-4535-b245-c620fccd7a6b",
+      "data": [
+        {
+          "text": "My "
+        },
+        {
+          "text": "car is dirty",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": ". Where can I get it cleaned?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "68cb4a06-ca9e-4007-bbc2-c549afc0a868",
+      "data": [
+        {
+          "text": "where can i change my car "
+        },
+        {
+          "text": "engine oil",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3816cced-7351-44cc-aa7e-11a3682ee715",
+      "data": [
+        {
+          "text": "my car tire got "
+        },
+        {
+          "text": "punctured",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": ". Where I get it done?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1141c31b-d496-49b0-85c4-0cce7a8cbeb3",
+      "data": [
+        {
+          "text": "where can i get "
+        },
+        {
+          "text": "ice tea",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b938058b-43d2-47c5-9573-13892bec8537",
+      "data": [
+        {
+          "text": "i would like to get a "
+        },
+        {
+          "text": "cappuccino",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f1e19616-29a4-41ea-8dee-c0e2b3d7b9d3",
+      "data": [
+        {
+          "text": "where can i "
+        },
+        {
+          "text": "board a bus",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0c157217-ec45-4d3d-9730-f9dd12799c99",
+      "data": [
+        {
+          "text": "i wanna "
+        },
+        {
+          "text": "go bowling",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "924be4c1-f547-4bab-9cc5-7ffcb3a81d63",
+      "data": [
+        {
+          "text": "i\u0027m in the mood for "
+        },
+        {
+          "text": "chinese food",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "28511fed-67b7-440f-8d38-249b8e6f0f67",
+      "data": [
+        {
+          "text": "indian restaurants",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "nearby",
+          "alias": "rankby1",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "897ae251-1719-4982-8d96-ae54e1d0ee4c",
+      "data": [
+        {
+          "text": "it has been a long time since i got a "
+        },
+        {
+          "text": "manicure",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "71ebb830-5abb-495a-92bc-54c405821159",
+      "data": [
+        {
+          "text": "i could really use a cup of "
+        },
+        {
+          "text": "tea",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "right now",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "784af428-7f87-4d65-89dd-359399dbbfe7",
+      "data": [
+        {
+          "text": "i would like to get a cup of "
+        },
+        {
+          "text": "tea",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d106dfcd-835c-4fc0-a813-5bb93aaf6f43",
+      "data": [
+        {
+          "text": "i would like to get a cup of "
+        },
+        {
+          "text": "coffee",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "babdec12-971d-4ecd-b98f-c0df774c66de",
+      "data": [
+        {
+          "text": "i want to sell my "
+        },
+        {
+          "text": "bicycle",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "8066e4f5-41c5-4733-9a54-08c84ce29125",
+      "data": [
+        {
+          "text": "where can i repair my damaged "
+        },
+        {
+          "text": "bicycle",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a7ce2b47-2d7b-4fbb-99d8-478d5bbb1bc2",
+      "data": [
+        {
+          "text": "find me the "
+        },
+        {
+          "text": "nearest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "bicycle store",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "404dc997-d931-44c8-bae7-297de46d76ee",
+      "data": [
+        {
+          "text": "i\u0027d like to buy a "
+        },
+        {
+          "text": "bicycle",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "013679d7-c0fc-4148-864f-4b25239617fe",
+      "data": [
+        {
+          "text": "salon",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "nearest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " to me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e55edb99-9e21-4234-94b6-acae36306d11",
+      "data": [
+        {
+          "text": "where can i get a "
+        },
+        {
+          "text": "manicure",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "35fb9f06-d49b-47f5-badc-d1e485f69ebe",
+      "data": [
+        {
+          "text": "i wanna get a "
+        },
+        {
+          "text": "pedicure",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4a0ea725-86de-4845-93d6-0c6240fd8639",
+      "data": [
+        {
+          "text": "I need to get my "
+        },
+        {
+          "text": "nails",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " done"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dc204f57-9231-4a68-a8ef-63ce39365c87",
+      "data": [
+        {
+          "text": "give me a list of "
+        },
+        {
+          "text": "bars",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "18ed4cc7-7dcc-4bb7-bbc9-2c0f8b0ec769",
+      "data": [
+        {
+          "text": "where can i get a "
+        },
+        {
+          "text": "drink",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "91ff1e90-7ef1-4d97-ba9a-91a5b540e85e",
+      "data": [
+        {
+          "text": "find "
+        },
+        {
+          "text": "banks",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "near me",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " on the basis of "
+        },
+        {
+          "text": "distance",
+          "alias": "rankby1",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "08571d59-2d57-4234-b6a6-1077b7a7279c",
+      "data": [
+        {
+          "text": "where can i "
+        },
+        {
+          "text": "store money",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c5de93af-2949-4996-b6ea-8bacd613db45",
+      "data": [
+        {
+          "text": "find me the "
+        },
+        {
+          "text": "nearest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "bank",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "50dd87d3-577e-450a-8d47-9634aa789244",
+      "data": [
+        {
+          "text": "tell me where the "
+        },
+        {
+          "text": "nearest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "bakeries",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " are"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dd7a1118-735e-4ef0-b1c3-48d71b44b9ca",
+      "data": [
+        {
+          "text": "give me the results of "
+        },
+        {
+          "text": "bakery",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "near me",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " on the basis of "
+        },
+        {
+          "text": "eminence",
+          "alias": "rankby1",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "59d22402-939c-4da9-a586-ab53de5f01bd",
+      "data": [
+        {
+          "text": "find the "
+        },
+        {
+          "text": "nearest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "bakery",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " for me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ea0fad5e-b330-45cc-8f3e-2dc9caeb6ccd",
+      "data": [
+        {
+          "text": "where can i get "
+        },
+        {
+          "text": "cake",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "274b7d84-ab12-4f50-aae2-89fd5fdd8a1a",
+      "data": [
+        {
+          "text": "where do i get "
+        },
+        {
+          "text": "bread",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e479f31d-ced8-45a1-b175-0f7480533f42",
+      "data": [
+        {
+          "text": "i would like to "
+        },
+        {
+          "text": "deposit",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " some "
+        },
+        {
+          "text": "cash",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "e4176af3-7a94-4416-b772-52be92c3d43c",
+      "data": [
+        {
+          "text": "where can i "
+        },
+        {
+          "text": "withdraw money",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "41261134-7e57-484d-b6c1-f4a8916ce467",
+      "data": [
+        {
+          "text": "i am out of "
+        },
+        {
+          "text": "cash",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f5c1d2ab-496a-428f-b83a-3c345e573edc",
+      "data": [
+        {
+          "text": "i need to withdraw "
+        },
+        {
+          "text": "money",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "439d70df-f5ff-47cb-9e14-49682759561f",
+      "data": [
+        {
+          "text": "find "
+        },
+        {
+          "text": "atms",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " on the basis of "
+        },
+        {
+          "text": "distance",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d933b28f-16b1-4e57-9d8e-1ac183af89a3",
+      "data": [
+        {
+          "text": "find me the "
+        },
+        {
+          "text": "nearest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "atms",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5972a050-66f6-4b1d-abd7-1d03c3d2eb88",
+      "data": [
+        {
+          "text": "i could really use some "
+        },
+        {
+          "text": "good",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "art",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "now",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "093b6d0d-03ad-4614-9fee-204298276ed6",
+      "data": [
+        {
+          "text": "find "
+        },
+        {
+          "text": "art galleries",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " in my "
+        },
+        {
+          "text": "neighbourhood",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4a9bf3cc-9d26-42e2-8265-34a397e34175",
+      "data": [
+        {
+          "text": "show me the "
+        },
+        {
+          "text": "nearest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "art gallery",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "05cbbe70-54ca-491d-9843-7baa7f22a515",
+      "data": [
+        {
+          "text": "where can i find some "
+        },
+        {
+          "text": "good",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "paintings",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d5c6ca94-34bc-4bc9-8e00-624309cfc511",
+      "data": [
+        {
+          "text": "i would like to look at some "
+        },
+        {
+          "text": "good",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "art",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "77bdf15a-f0ac-4d12-8532-3b2108585af9",
+      "data": [
+        {
+          "text": "i want to watch "
+        },
+        {
+          "text": "turtles",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "eddc1075-21b8-4211-92f6-f5af73938d18",
+      "data": [
+        {
+          "text": "find me "
+        },
+        {
+          "text": "aquariums",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " sorted by "
+        },
+        {
+          "text": "prominence",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3dc938cc-39ea-451c-94d0-d70397d4b696",
+      "data": [
+        {
+          "text": "where can i buy "
+        },
+        {
+          "text": "fish",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "92d2a1d9-61d0-4748-be56-37b5bcc37344",
+      "data": [
+        {
+          "text": "can you find me the "
+        },
+        {
+          "text": "nearest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "aquarium",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b5861fea-2d9d-4cd8-b852-3ca56c4b8a42",
+      "data": [
+        {
+          "text": "i want to go on a "
+        },
+        {
+          "text": "fun ride",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6b78cf2a-ef71-46ab-8f6f-1519afaa6d77",
+      "data": [
+        {
+          "text": "where can i find a "
+        },
+        {
+          "text": "ferris wheel",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " ride"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a5b1af7d-3228-4307-be98-0c2086921fdf",
+      "data": [
+        {
+          "text": "show me "
+        },
+        {
+          "text": "famous",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "amusement parks",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "near me",
+          "alias": "rankby1",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "193fcc03-78e8-4fc6-9165-af1393d04548",
+      "data": [
+        {
+          "text": "i need to go to an "
+        },
+        {
+          "text": "amusement park",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8d2ea64d-398a-4db3-823e-a3f2f5b9d07b",
+      "data": [
+        {
+          "text": "i need to go to a "
+        },
+        {
+          "text": "theme park",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f93d68bd-cfab-4bc9-adc9-ae2fa05242e6",
+      "data": [
+        {
+          "text": "show me some "
+        },
+        {
+          "text": "prominent",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "tax accountants",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "18402c94-0b18-4ea1-9f8c-45bc026e379f",
+      "data": [
+        {
+          "text": "show me some "
+        },
+        {
+          "text": "tax accountants",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "near me",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5c92b965-f6ea-4a51-80d1-37c62caffcb6",
+      "data": [
+        {
+          "text": "where can i get my "
+        },
+        {
+          "text": "tax",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " done"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d1f46847-1781-49b7-b59d-23e1d8822228",
+      "data": [
+        {
+          "text": "i need to "
+        },
+        {
+          "text": "fly",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "san jose",
+          "alias": "geo-city",
+          "meta": "@sys.geo-city",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "98775383-846f-491f-9750-3676997509ca",
+      "data": [
+        {
+          "text": "find me the "
+        },
+        {
+          "text": "nearest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "airport",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ca1c95f6-0f7d-40d3-a4c1-de48104e0287",
+      "data": [
+        {
+          "text": "where should i get a "
+        },
+        {
+          "text": "flight",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c9beb8d3-3d3d-4669-8ca3-7c5d02cbf39c",
+      "data": [
+        {
+          "text": "aquariums",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3cf251f7-4dbf-45a9-9e55-8822d4c1adcf",
+      "data": [
+        {
+          "text": "swimming pool",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5451dfba-e8ca-46c6-b534-62037138f66c",
+      "data": [
+        {
+          "text": "where do i "
+        },
+        {
+          "text": "rent a movie",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "b1d5713c-3543-4c1a-9bb5-9a50ec79ca04",
+      "data": [
+        {
+          "text": "rent a movie",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "d7b9838f-e3a1-4f92-8533-af223a70341c",
+      "data": [
+        {
+          "text": "i would like to open a "
+        },
+        {
+          "text": "bank account",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "877332cd-6b43-4913-afee-d28acb68539b",
+      "data": [
+        {
+          "text": "i\u0027m "
+        },
+        {
+          "text": "running low",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " on "
+        },
+        {
+          "text": "cash",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " now"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "19a8c728-22d1-47ea-bbf8-8b354e28c089",
+      "data": [
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " places"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "f3f2b65e-3c1c-4336-9aea-b551ce30f553",
+      "data": [
+        {
+          "text": "i\u0027m "
+        },
+        {
+          "text": "starving",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "60594a1b-6d18-4c50-9cbb-39906d1e3315",
+      "data": [
+        {
+          "text": "i\u0027m really "
+        },
+        {
+          "text": "hungry",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1e07e16d-9ffa-4c3c-8351-a22c273db966",
+      "data": [
+        {
+          "text": "I wanna go to a "
+        },
+        {
+          "text": "movie",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "303730f2-85cc-48df-8636-590d7318db61",
+      "data": [
+        {
+          "text": "are there "
+        },
+        {
+          "text": "eminent",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "comedy shows",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " around?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 2
+    },
+    {
+      "id": "2240aa13-df67-4282-b8b0-097caae941c9",
+      "data": [
+        {
+          "text": "tell me some of the "
+        },
+        {
+          "text": "recreational activities",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "in the vicinity",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 2
+    },
+    {
+      "id": "3ea451ce-b0ff-41f5-ad54-911403490697",
+      "data": [
+        {
+          "text": "who is the "
+        },
+        {
+          "text": "best",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "dentist",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " in town?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 2
+    },
+    {
+      "id": "cb5fedb9-3fb2-4977-9c2d-db357cffdcc8",
+      "data": [
+        {
+          "text": "tennis courts",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "near me",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 3
+    },
+    {
+      "id": "d9cee220-3bf5-4b50-9cc0-4b9e25cbc170",
+      "data": [
+        {
+          "text": "best places to have "
+        },
+        {
+          "text": "dinner",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " in the "
+        },
+        {
+          "text": "neighbourhood",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 8
+    },
+    {
+      "id": "5dcdeb0c-422d-42d1-8d45-98712eac5565",
+      "data": [
+        {
+          "text": "are there any "
+        },
+        {
+          "text": "amusement parks",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "not far away",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 4
+    },
+    {
+      "id": "f0e955ef-c64b-4788-b427-57e236f1f9fc",
+      "data": [
+        {
+          "text": "i\u0027m looking to stay at an "
+        },
+        {
+          "text": "fancy",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "hotel",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "tonight",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 3
+    },
+    {
+      "id": "092dc832-d3b2-4a43-91f1-55b90ed64930",
+      "data": [
+        {
+          "text": "i want to know where the "
+        },
+        {
+          "text": "closest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "gym",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " is"
+        }
+      ],
+      "isTemplate": false,
+      "count": 2
+    },
+    {
+      "id": "bae94b5b-fa59-4ec3-b7eb-3d24469de841",
+      "data": [
+        {
+          "text": "what are some of the "
+        },
+        {
+          "text": "renowned",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "universities",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " around here?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 3
+    },
+    {
+      "id": "1bcc43fb-3e8f-4270-83c9-2ef3ecc9cae8",
+      "data": [
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "pharmacy",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fee2c695-c939-49a8-a8ca-f74ba719e1a5",
+      "data": [
+        {
+          "text": "Luxurious",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "ones",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b6f9d51e-55dd-425f-9ce6-5a1ca6cb1f9a",
+      "data": [
+        {
+          "text": "nearby",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " search"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "cc075247-a8ab-4b9d-bb15-f87bca3767b1",
+      "data": [
+        {
+          "text": "can you please show me a list of "
+        },
+        {
+          "text": "banks",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " in the "
+        },
+        {
+          "text": "neighbourhood",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": "?",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e982cc3a-d948-4060-9637-6caae8cc84ea",
+      "data": [
+        {
+          "text": "Restaurants",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "005ff535-ce42-4c77-9c54-55713c2c2362",
+      "data": [
+        {
+          "text": "i wanna go to a "
+        },
+        {
+          "text": "salon",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "dbe571b5-ba7d-4c0a-9e6f-1f7ae55f4521",
+      "data": [
+        {
+          "text": "are there any "
+        },
+        {
+          "text": "car rentels",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2f74864d-7aac-41aa-8073-f40705c0ae40",
+      "data": [
+        {
+          "text": "give me a list of "
+        },
+        {
+          "text": "bars",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " in the "
+        },
+        {
+          "text": "neighbourhood",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "a4290712-1783-480c-931f-5153726e9918",
+      "data": [
+        {
+          "text": "what are some of the "
+        },
+        {
+          "text": "prominent",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "bakeries",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "576cc3af-6801-46a0-857d-469211a29e24",
+      "data": [
+        {
+          "text": "nearest",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "atm",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1487942e-facd-4b2d-afe5-2512bbdee103",
+      "data": [
+        {
+          "text": "famous",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "art galleries",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "df958659-b6f2-4a5a-a7d8-93fa17963631",
+      "data": [
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "parks",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f73ca7b6-a405-4a6d-a3c5-224682b0e998",
+      "data": [
+        {
+          "text": "can you please show me a list of "
+        },
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "airports",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "ef8b85bd-a852-4ab1-826b-b3a3aec5ee0f",
+      "data": [
+        {
+          "text": "just the ones "
+        },
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " please"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "67167957-65e4-4c26-bfdc-7ac7e521a0a5",
+      "data": [
+        {
+          "text": "what are some "
+        },
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "movie theatres",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d851650d-2c3e-4583-b7cf-74b89f6dd87c",
+      "data": [
+        {
+          "text": "i wanna have "
+        },
+        {
+          "text": "breakfast",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "189f05af-a7a2-4765-ac7d-d7ae1c97e6b1",
+      "data": [
+        {
+          "text": "i\u0027m looking for a "
+        },
+        {
+          "text": "nice",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": true
+        },
+        {
+          "text": " place to have "
+        },
+        {
+          "text": "dinner",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "8c3e29de-a403-4bc6-aba9-ac7ccaed7218",
+      "data": [
+        {
+          "text": "are there any "
+        },
+        {
+          "text": "movie theatres",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " in the "
+        },
+        {
+          "text": "neighbourhood",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "57a8c9d0-4575-4c87-a1c4-d44390185870",
+      "data": [
+        {
+          "text": "i need to go to a "
+        },
+        {
+          "text": "hospital",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "327c9152-0cfa-4b5a-a909-97358e25ef9a",
+      "data": [
+        {
+          "text": "good",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "diners",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " in the "
+        },
+        {
+          "text": "vicinity",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9092b0f3-3eb5-48ae-b81a-88570a16248b",
+      "data": [
+        {
+          "text": "what are some "
+        },
+        {
+          "text": "restaurants",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "nearby",
+          "alias": "rankby",
+          "meta": "@rankby",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "097bee22-16da-41dc-8420-129fcdf24df3",
+  "name": "type_name",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "type.name",
+      "affectedContexts": [
+        {
+          "name": "type_name-followup",
+          "parameters": {},
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@type",
+          "name": "type",
+          "value": "$type",
+          "prompts": [
+            "Where do you want to go (Cinemas, Restaurants, etc.)?",
+            "What place is it that you want to go to (Museum, Gym, etc.)?"
+          ],
+          "isList": false
+        },
+        {
+          "required": false,
+          "dataType": "@rankby",
+          "name": "rankby",
+          "value": "$rankby",
+          "prompts": [
+            "Would you like to know about the renowned ones or whichever is the closest?",
+            "Are you looking for anything fancy or just the ones nearby?"
+          ],
+          "isList": false
+        },
+        {
+          "name": "type_original",
+          "value": "$type.original"
+        },
+        {
+          "dataType": "@sys.geo-city",
+          "name": "geo-city",
+          "value": "$geo-city",
+          "isList": false
+        },
+        {
+          "dataType": "@rankby",
+          "name": "rankby1",
+          "value": "$rankby1",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "Oops! I am not able to find what you are looking for. As a reminder,  I am searching for places based on your location only. To look up other places, type \"Specific requests\".",
+            "I am not able to find what you are looking for. If you want to search for a specific place, please type \"Specific requests\".",
+            ""
+          ]
+        },
+        {
+          "type": 2,
+          "title": "Either pick one of these or type your own request:",
+          "replies": [
+            "Famous Cinemas",
+            "Nearby Restaurants",
+            "Well known Banks"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

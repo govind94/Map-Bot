@@ -1,0 +1,67 @@
+{
+  "userSays": [
+    {
+      "id": "283a7351-7b1d-4595-98eb-cb4023c74f98",
+      "data": [
+        {
+          "text": "@sys.any:phrase"
+        }
+      ],
+      "isTemplate": true,
+      "count": 1
+    }
+  ],
+  "id": "63265157-dda0-4b88-9be0-236f0c0028d0",
+  "name": "text_search",
+  "auto": true,
+  "contexts": [
+    "text_search_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "text.search",
+      "affectedContexts": [
+        {
+          "name": "text_search_context",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "phrase",
+          "value": "$phrase",
+          "prompts": [
+            "Please say something along the lines of \"Cinemas in NYC\" or \"Comedy shows in New Brunswick\"."
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "I couldn\u0027t find what you were looking for. Here are some examples of what you could say: \n\"Cinemas in NYC\"\n\"Comedy shows in New Brunswick\".",
+            "Please make sure what you say is concise and precise."
+          ]
+        },
+        {
+          "type": 2,
+          "title": "Pick one of these or type your own request:",
+          "replies": [
+            "Cinemas in NYC",
+            "Comedy shows in NB"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

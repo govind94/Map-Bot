@@ -1,0 +1,84 @@
+{
+  "userSays": [
+    {
+      "id": "ccebaa2c-e073-430e-a2f2-5d864c23f820",
+      "data": [
+        {
+          "text": "336 George Street, New Brunswick",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "474b662c-9019-4f2b-957e-358cc662fb6c",
+      "data": [
+        {
+          "text": "4 Easton Avenue, New Brunswick",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6a096ba4-f312-4ca7-9f68-ffb3f3e02fce",
+      "data": [
+        {
+          "text": "@sys.address:address"
+        }
+      ],
+      "isTemplate": true,
+      "count": 0
+    }
+  ],
+  "id": "b67aef78-f75e-4994-8109-63106936e474",
+  "parentId": "097bee22-16da-41dc-8420-129fcdf24df3",
+  "rootParentId": "097bee22-16da-41dc-8420-129fcdf24df3",
+  "name": "type_name_static_map",
+  "auto": true,
+  "contexts": [
+    "type_name-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "type.name.static.map",
+      "affectedContexts": [
+        {
+          "name": "type_name-followup",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.address",
+          "name": "address",
+          "value": "$address",
+          "prompts": [
+            "Please enter the address."
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Error!"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

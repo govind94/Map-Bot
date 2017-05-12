@@ -1,0 +1,1232 @@
+{
+  "userSays": [
+    {
+      "id": "dcb46ec7-908c-467f-94a8-cb1b51f8f7f6",
+      "data": [
+        {
+          "text": "i want to know the "
+        },
+        {
+          "text": "rating",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "chipotle",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " near me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1f937e6c-ad29-44ed-aaa1-133477baf719",
+      "data": [
+        {
+          "text": "give me the "
+        },
+        {
+          "text": "address",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of the "
+        },
+        {
+          "text": "nearest",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "hindu temple",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "cb6bceac-5f25-4f00-8ef7-3b6b7e0ac210",
+      "data": [
+        {
+          "text": "how does one "
+        },
+        {
+          "text": "contact",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "rutgers pharmacy",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "95314e1b-64b6-4cf6-aac9-54f42081be37",
+      "data": [
+        {
+          "text": "what is the "
+        },
+        {
+          "text": "rating",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "kodaikanal international school",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "93f8851d-92ee-405a-9967-6316f3554a7f",
+      "data": [
+        {
+          "text": "show me "
+        },
+        {
+          "text": "photos",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "rutgers university",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b7af0eed-4c0c-469a-9474-82fabfbbe566",
+      "data": [
+        {
+          "text": "do you think "
+        },
+        {
+          "text": "moghul",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " is "
+        },
+        {
+          "text": "open",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " now"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8a91dc76-6a38-4e5d-93cd-c530437d9f09",
+      "data": [
+        {
+          "text": "is "
+        },
+        {
+          "text": "mirchi",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "open",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " now"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "bd8d5b85-417d-4f4b-8100-6c406bb6542d",
+      "data": [
+        {
+          "text": "is "
+        },
+        {
+          "text": "filippo\u0027s pizza",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "open",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c272c0f6-83c7-4c80-b03d-742c4d28e4ae",
+      "data": [
+        {
+          "text": "i wanna know something about a place"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "94cab234-922f-4dda-aa11-f32e6f1770a0",
+      "data": [
+        {
+          "text": "snap",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "the statue of liberty",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "932cf302-2cc3-4032-8c88-78a0812b80e3",
+      "data": [
+        {
+          "text": "how good is",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "coney island",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4a8796ef-cda1-4b6e-8dad-c94859286d04",
+      "data": [
+        {
+          "text": "where is",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " the "
+        },
+        {
+          "text": "lower antelope canyon",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c37a878b-e759-4d99-a8f0-68acd422545f",
+      "data": [
+        {
+          "text": "where is",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "subway",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "736d3f14-3bbd-49c6-9256-de71710c1e2c",
+      "data": [
+        {
+          "text": "tell me the "
+        },
+        {
+          "text": "address",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "philippe chatrier court",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "36168035-7a77-44ec-927f-1b858454888c",
+      "data": [
+        {
+          "text": "where is",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " the "
+        },
+        {
+          "text": "antelope canyon",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "1ca6eebe-8c79-4bf4-856c-4939031422ae",
+      "data": [
+        {
+          "text": "First tell me the "
+        },
+        {
+          "text": "reviews",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "Big Bend National Park",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "e6ba7df0-5c7a-4104-9ab6-6418cca9d15b",
+      "data": [
+        {
+          "text": "what is the "
+        },
+        {
+          "text": "phone number",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "morgan properties",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a99f5bcf-dede-4c86-afe1-fa3f3997bf59",
+      "data": [
+        {
+          "text": "information",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " about places"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "2db1f2e9-b9be-4cbd-9670-27d0159e842e",
+      "data": [
+        {
+          "text": "photo",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "zion national park",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "52cfbdd4-860b-4380-8d18-1ff25007f6e2",
+      "data": [
+        {
+          "text": "what are the "
+        },
+        {
+          "text": "opening hours",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "zion national park",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "7215b1d2-bc5d-4a0f-a4e8-69859dd74a69",
+      "data": [
+        {
+          "text": "when does "
+        },
+        {
+          "text": "cava",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "open",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 2
+    },
+    {
+      "id": "2f1b2832-fd30-46e7-a8ec-816362649ee1",
+      "data": [
+        {
+          "text": "what is the "
+        },
+        {
+          "text": "address",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "rutgers recreational center",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "4e511329-e7f8-47d2-bcbb-7326ba92a0ed",
+      "data": [
+        {
+          "text": "how do i "
+        },
+        {
+          "text": "get in touch",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": true
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "burger walla",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d79cb952-ed4b-4ab8-a407-fb40795733e9",
+      "data": [
+        {
+          "text": "what is "
+        },
+        {
+          "text": "rutgers university",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": "\u0027s "
+        },
+        {
+          "text": "phone number",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "74b72c84-872f-4b2b-afc3-f533eebd1fc6",
+      "data": [
+        {
+          "text": "what "
+        },
+        {
+          "text": "number",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": true
+        },
+        {
+          "text": " should i call "
+        },
+        {
+          "text": "amc loews",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " at?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f2c80f56-9c91-47e3-a57f-c7bb2d9e781d",
+      "data": [
+        {
+          "text": "information",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " about "
+        },
+        {
+          "text": "rockefeller center",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fc301df8-40aa-4837-acd9-741d58ed0387",
+      "data": [
+        {
+          "text": "info",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " about "
+        },
+        {
+          "text": "times square",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d3a540f3-8aa2-4b62-946b-ed35783e9099",
+      "data": [
+        {
+          "text": "menu",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "dunkin donuts",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1312acae-3cca-4301-8aca-e84125defd39",
+      "data": [
+        {
+          "text": "show me the "
+        },
+        {
+          "text": "menu",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "chapathi house",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "94e3f693-c440-4789-844b-2c1e35e31f29",
+      "data": [
+        {
+          "text": "does "
+        },
+        {
+          "text": "ru hungry",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " have a "
+        },
+        {
+          "text": "website",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "faa16ea4-aea7-4119-a3c4-d6e37419b9e5",
+      "data": [
+        {
+          "text": "where can i find "
+        },
+        {
+          "text": "indikitch",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " on the "
+        },
+        {
+          "text": "internet",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a3cb0a15-bc6c-4481-8f12-50f4eb7d4d9f",
+      "data": [
+        {
+          "text": "can you tell what "
+        },
+        {
+          "text": "time square",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": "\u0027s "
+        },
+        {
+          "text": "rating",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " is?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "35d849e6-dc7e-47f7-b329-c0a91d711b60",
+      "data": [
+        {
+          "text": "i wanna know the "
+        },
+        {
+          "text": "rating",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "rutgers",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4ccab77d-1aa8-49a8-a87f-0c14ed386e63",
+      "data": [
+        {
+          "text": "give me the "
+        },
+        {
+          "text": "phone number",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of the "
+        },
+        {
+          "text": "nearest",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "salon",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "62916528-46e7-4d2a-b507-e1db38581375",
+      "data": [
+        {
+          "text": "i want to know whether "
+        },
+        {
+          "text": "dunkin donuts",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " is "
+        },
+        {
+          "text": "open",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "now",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "35dd34d1-8b47-443b-92b6-01e2596f296c",
+      "data": [
+        {
+          "text": "info about places"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dd82102e-f4e7-4372-8251-4e04ee709dae",
+      "data": [
+        {
+          "text": "Rating",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "places",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "54424d60-988f-4efd-b8cb-b800d7130d0e",
+      "data": [
+        {
+          "text": "when is the "
+        },
+        {
+          "text": "cheesecake factory",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "open",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8c3207ec-4136-4c53-a37a-a28e919a4e28",
+      "data": [
+        {
+          "text": "is "
+        },
+        {
+          "text": "dunkin donuts",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "open",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "4763d2d0-9fcd-419c-b062-e3e0d278b242",
+      "data": [
+        {
+          "text": "i wanna know the "
+        },
+        {
+          "text": "address",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "14b16207-5bbe-49a9-b572-d6daed44f36a",
+      "data": [
+        {
+          "text": "i want to see "
+        },
+        {
+          "text": "photos",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 2
+    },
+    {
+      "id": "fb18f82a-2974-48c3-accb-0a3be3d5db2d",
+      "data": [
+        {
+          "text": "give me "
+        },
+        {
+          "text": "reviews",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": true
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "dominos pizza",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "182e5893-48b4-4771-906f-302610d8c76f",
+      "data": [
+        {
+          "text": "give me the "
+        },
+        {
+          "text": "address",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": true
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "park deli too",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e4ab4c03-e8fd-4343-b621-637f9ecbd0e0",
+      "data": [
+        {
+          "text": "where is",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "rutgers cinema",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "bd128a4c-3e75-4607-a70b-2e99bfa7dab5",
+      "data": [
+        {
+          "text": "what is "
+        },
+        {
+          "text": "rutgers cinema",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": "\u0027s "
+        },
+        {
+          "text": "rating",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "683ab829-5c0c-4c6e-ab50-748eca4200cc",
+      "data": [
+        {
+          "text": "where is",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "kaidi kitchen",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "cd305053-7c3f-48b9-b824-e64b87307c2c",
+      "data": [
+        {
+          "text": "give me "
+        },
+        {
+          "text": "photos",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": true
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "AMC loews",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "af1c89e4-613b-40dd-bf18-8df86cd8d945",
+      "data": [
+        {
+          "text": "show me some "
+        },
+        {
+          "text": "photos",
+          "alias": "json_key",
+          "meta": "@json_key",
+          "userDefined": true
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "george street playhouse",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "3edce147-e739-4556-82c4-a8b1fc6991b1",
+  "name": "type_info",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "type.info",
+      "affectedContexts": [
+        {
+          "name": "type_info-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@type",
+          "name": "type",
+          "value": "$type",
+          "prompts": [
+            "You can ask me for ratings, reviews, phone number, address, opening hours, and photos of any place! So go ahead and ask me."
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@json_key",
+          "name": "json_key",
+          "value": "$json_key",
+          "prompts": [
+            "Okay! Tell me what you want to know.",
+            "Awesome! Now, tell me what you want to know about $type.original."
+          ],
+          "isList": false
+        },
+        {
+          "name": "json_key_original",
+          "value": "$json_key.original"
+        },
+        {
+          "required": false,
+          "name": "type_original",
+          "value": "$type.original"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Well, I ran into a bit of a problem while fetching data. How about we do this again? Here are some examples of what you could say: \n\n\"Give me the reviews of Dominos Pizza\" \n\"Is Dunkin Donuts open now?\" \n\"Can you tell me what the phone number of the nearest salon is?\""
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

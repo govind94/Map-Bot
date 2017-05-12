@@ -1,0 +1,173 @@
+{
+  "userSays": [
+    {
+      "id": "cf7c41d6-eba9-4a3f-8369-cf95ef86ec6a",
+      "data": [
+        {
+          "text": "good",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " to see you"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "59af9fae-bb32-416f-8741-d4e8de0e2566",
+      "data": [
+        {
+          "text": "how is everything"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ea020a08-aea5-4bd1-b124-dd879f63fd72",
+      "data": [
+        {
+          "text": "how are you doing"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "69d1c15c-e4e1-41b7-a2cb-cbea3652a2c8",
+      "data": [
+        {
+          "text": "heyo"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "836b26e0-c2ff-46ad-9948-aa9d4390545b",
+      "data": [
+        {
+          "text": "hey hows it going"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "39a5c894-9abd-4693-af63-fa320153900a",
+      "data": [
+        {
+          "text": "hey whats up"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dada04dd-34e9-4a05-be59-d7b8f4485189",
+      "data": [
+        {
+          "text": "hi"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "2d06eb92-801f-4f45-b207-060e154f3d95",
+      "data": [
+        {
+          "text": "heya"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "965c9de7-b903-4f9b-abe3-946da53ae76f",
+      "data": [
+        {
+          "text": "yo"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "94c31a2e-4075-4b52-87b3-04ffd6fbcbce",
+      "data": [
+        {
+          "text": "aloha"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "80c535b2-d95f-4d7c-80ab-3df079097c60",
+      "data": [
+        {
+          "text": "hey there"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dbc37d47-dd76-42fc-bc0a-5306491911fb",
+      "data": [
+        {
+          "text": "hello"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "c5bf02fd-49e2-4012-b726-e21f70f30409",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "Hi there! How can I help you today?",
+            "Good day, my friend! How may I be of use to you?",
+            "Greetings, Human! What\u0027s up?"
+          ]
+        },
+        {
+          "type": 2,
+          "title": "Pick one or type away :P",
+          "replies": [
+            "Nearby Search",
+            "Specific Requests",
+            "Directions",
+            "Place Autocomplete",
+            "My location",
+            "Nearest Road",
+            "Help"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "userSays": [
+    {
+      "id": "80919a11-6a1d-46f7-adf9-d503a6d16115",
+      "data": [
+        {
+          "text": "i have another specific request"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4a814f22-cb4c-4a4f-b09b-4b4e919b1311",
+      "data": [
+        {
+          "text": "i have a specific request"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d8c5c838-0c81-4c8c-b52c-f2ae2b8f1e3e",
+      "data": [
+        {
+          "text": "specific requests"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "8b855f6c-2247-4c75-bf3f-145419f96859",
+  "name": "text_search_entry",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "text_search_context",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "Cool! You can ask just about anything. Just make sure what you ask is precise and concise. Like \"Pizza in New York\" or \"Shoe stores near LA\".",
+            "So you have a specific request. I can most definitely help you with that. Here are some examples of things you could say."
+          ]
+        },
+        {
+          "type": 2,
+          "title": "Pick one of these or type your own request:",
+          "replies": [
+            "Pizza in New York",
+            "Shoe stores near LA",
+            "Aquariums in Boston",
+            "Hotels in Chicago"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

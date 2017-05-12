@@ -1,0 +1,85 @@
+{
+  "userSays": [
+    {
+      "id": "40a96d19-21e8-45bd-9acf-dceca107446f",
+      "data": [
+        {
+          "text": "nearest",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " road to me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c94086bd-d079-4451-9597-27dfaa680f46",
+      "data": [
+        {
+          "text": "where is",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " the "
+        },
+        {
+          "text": "nearest",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " road from where i am "
+        },
+        {
+          "text": "now",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "68949be5-0fb2-4e1d-aa24-8735b6c6f189",
+      "data": [
+        {
+          "text": "are there any roads "
+        },
+        {
+          "text": "near me",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "b8492685-3ac4-4244-a5d8-16fd7dae15c4",
+  "name": "nearest_roads",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "nearest.roads",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Unexpected error with the service 😟"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

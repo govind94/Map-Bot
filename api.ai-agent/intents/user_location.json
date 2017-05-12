@@ -1,0 +1,87 @@
+{
+  "userSays": [
+    {
+      "id": "8f4ce64e-f10f-4766-b465-8779888b3885",
+      "data": [
+        {
+          "text": "what is my location"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b41decfa-f49e-4045-a632-75bfd21f35e5",
+      "data": [
+        {
+          "text": "my location"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "083a7feb-ac44-4b08-8f66-a8ba7e449d5c",
+      "data": [
+        {
+          "text": "tell me where i am"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "aab24f95-afcf-41b5-90d1-ed75c3744793",
+      "data": [
+        {
+          "text": "do you know where i am"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fa3fd5c4-cf81-4584-9f73-15b263b9ab94",
+      "data": [
+        {
+          "text": "can you tell me where i am now"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "48cb04d3-61f9-461d-b7fb-ea81c5b98316",
+      "data": [
+        {
+          "text": "where am i right now"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "4990234a-b1fa-422c-b6c4-c9d45cb65e92",
+  "name": "user_location",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "user.location",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Oops! I don\u0027t really know where you are at the moment :|"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

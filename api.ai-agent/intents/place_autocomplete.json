@@ -1,0 +1,101 @@
+{
+  "userSays": [
+    {
+      "id": "e9a16253-71ae-4ea8-8786-86a3b9b55c28",
+      "data": [
+        {
+          "text": "@sys.number-integer:radius"
+        }
+      ],
+      "isTemplate": true,
+      "count": 0
+    },
+    {
+      "id": "f5b59801-3ab0-4d4f-82aa-52979a644fb0",
+      "data": [
+        {
+          "text": "@sys.any:any"
+        }
+      ],
+      "isTemplate": true,
+      "count": 0
+    },
+    {
+      "id": "0d53132b-6ece-4edb-88e4-851b945f3d20",
+      "data": [
+        {
+          "text": "@autocomplete_type:types"
+        }
+      ],
+      "isTemplate": true,
+      "count": 0
+    }
+  ],
+  "id": "f4a0344a-be39-4193-ad08-8ecc0bb8acd9",
+  "name": "place_autocomplete",
+  "auto": true,
+  "contexts": [
+    "place_autocomplete_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "place.autocomplete",
+      "affectedContexts": [
+        {
+          "name": "place_autocomplete_context",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "place_autocomplete-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": false,
+          "dataType": "@autocomplete_type",
+          "name": "types",
+          "value": "$types",
+          "prompts": [
+            "What type of place are you searching for: address, establishment, regions, or cities?"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "prompts": [
+            "You typed \"$types.original\". Now enter a word or a phrase."
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.number-integer",
+          "name": "radius",
+          "value": "$radius",
+          "prompts": [
+            "Tell me the radius (in metres) from your location within which you want me to search. Maximum radius you can choose is 20000000."
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Oops! My brain froze for a moment there! Please ask me later."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
