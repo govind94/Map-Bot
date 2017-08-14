@@ -6,8 +6,9 @@
 * API.AI forms a JSON object containing the extracted keywords from the user input and sends it to the service which I've hosted on Heroku. 
 * The API.AI agent named 'MapBot' has been integrated with facebook, so the user can chat with the bot using facebook messenger.
 
-## Try it here
-<a href="./demo.html">Try it</a>
+<h3>
+  <a href="https://govind94.github.io/govind94.github.io/demo.html" target="_blank">Try it out</a>
+</h3>
 
 ## Architecture
 
