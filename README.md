@@ -5,11 +5,11 @@
 * API.AI was used for natural language processing. 
 * API.AI forms a JSON object containing the extracted keywords from the user input and sends it to the service which I've hosted on Heroku. 
 * The API.AI agent named 'MapBot' has been integrated with facebook, so the user can chat with the bot using facebook messenger.
-
+<!--
 <h1>
   <a href="https://govind94.github.io/govind94.github.io/demo.html" target="_blank">Try it out yourself!</a>
 </h1>
-
+-->
 ## Architecture
 
 <img src="./architecture.png" alt="Architecture" width="850" height="300" border="10" />
